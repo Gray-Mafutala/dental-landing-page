@@ -1,68 +1,76 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,500;10..48,600;10..48,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@layer base {
+    body {
+        @apply text-primary font-open-sans text-lg font-medium;
+    }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+    h1 {
+        @apply text-violet-dark font-bricolage-grotesque text-[4rem] leading-[1.2] -tracking-[2.56px] font-bold;
+    }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+    h2 {
+        @apply text-violet-dark font-bricolage-grotesque text-5xl -tracking-[1.92px] font-bold;
+    }
+
+    h3 {
+        @apply text-violet-dark text-xl -tracking-[0.4px] font-bold;
+    }
+
+    button {
+        @apply whitespace-nowrap select-none
+    }
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+@layer components {
+    .section-small-title {
+        @apply text-violet text-sm uppercase font-bold;
+    }
+
+    .nav-link,
+    .nav-link-active {
+        @apply relative overflow-hidden py-3 px-4 laptop:px-6 active:shadow-[#6523d71a_0px_-50px_36px_-28px_inset] rounded-[10px];
+    }
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+/* nav-link animation on hover */
+.nav-link::after,
+.nav-link-active::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 3px solid #583fbc;
+    border-radius: 12px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.nav-link::after {
+    transform: translateY(-120%);
+    transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.nav-link:hover::after {
+    transform: translateX(0);
+}
+
+/* violet btn animation on hover */
+.violet-btn-anim {
+    position: relative;
+}
+
+.violet-btn-anim::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 3px solid #583fbc;
+    transform: scaleX(0);
+    transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.violet-btn-anim:hover::after {
+    transform: scaleX(1);
 }
