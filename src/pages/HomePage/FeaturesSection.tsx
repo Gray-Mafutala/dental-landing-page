@@ -30,7 +30,7 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <div
+    <section
       className="bg-violet-light rounded-[48px] pt-20 px-24 pb-16
       flex flex-col items-center gap-y-14"
     >
@@ -57,7 +57,7 @@ const FeaturesSection = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

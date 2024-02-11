@@ -5,8 +5,8 @@ import DentalSurgeryImg from "../../assets/images/HomePage/patient-receiving-den
 
 const DentalEmergency = () => {
   return (
-    <div
-      className="max-w-screen-laptopM mx-auto
+    <section
+      className="max-w-[1200px] mx-auto
       flex justify-between w-full items-center"
     >
       {/* left content */}
@@ -22,7 +22,7 @@ const DentalEmergency = () => {
       <div className="flex flex-col">
         <span className="section-small-title">Dental 24 emergency</span>
 
-        <h2 className="max-w-[620px] mt-4 mb-6">
+        <h2 className="max-w-[550px] mt-4 mb-6">
           Gentle, friendly treatment from our locally practice.
         </h2>
 
@@ -35,7 +35,7 @@ const DentalEmergency = () => {
           Book an appointment
         </VioletButton>
       </div>
-    </div>
+    </section>
   );
 };
 

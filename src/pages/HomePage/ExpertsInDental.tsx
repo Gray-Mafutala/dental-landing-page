@@ -5,8 +5,8 @@ import VioletCircleOk from "../../assets/images/HomePage/violet-circle-ok.svg";
 
 const ExpertsInDental = () => {
   return (
-    <div
-      className="max-w-screen-laptopM mx-auto
+    <section
+      className="max-w-[1200px] mx-auto
       flex justify-between w-full items-center"
     >
       {/* left content */}
@@ -48,7 +48,7 @@ const ExpertsInDental = () => {
           className="w-full h-auto object-cover"
         />
       </div>
-    </div>
+    </section>
   );
 };
 

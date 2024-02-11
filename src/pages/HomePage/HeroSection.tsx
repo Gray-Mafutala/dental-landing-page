@@ -2,11 +2,11 @@ import React from "react";
 
 import VioletButton from "../../components/UI/VioletButton";
 import HeroImg from "../../assets/images/HomePage/indoor-shot-happy-young-woman.png";
-import TelephoneIcon from "../../assets/svg/telephone.svg";
+import TelephoneIcon from "../../assets/svg/contact-phone.svg";
 
 const HeroSection = () => {
   return (
-    <div
+    <section
       className="bg-sky-light bg-hero-3-vectors bg-no-repeat
       bg-[center_2rem] rounded-[48px] px-24 flex justify-between
       items-center"
@@ -42,7 +42,7 @@ const HeroSection = () => {
           className="max-w-md w-full h-auto object-cover"
         />
       </div>
-    </div>
+    </section>
   );
 };
 

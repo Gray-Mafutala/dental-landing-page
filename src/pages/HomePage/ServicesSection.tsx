@@ -8,29 +8,29 @@ import RootCanalIcon from "../../assets/images/HomePage/root-canal.svg";
 const services = [
   {
     img: DenturesIcon,
-    name: "Dentures",
+    service: "Dentures",
     color: "bg-sky-light",
   },
   {
     img: ImplantsIcon,
-    name: "Implants",
+    service: "Implants",
     color: "bg-violet-light",
   },
   {
     img: WhiteningIcon,
-    name: "Whitening",
+    service: "Whitening",
     color: "bg-fuchsia-light",
   },
   {
     img: RootCanalIcon,
-    name: "Root Canal",
+    service: "Root Canal",
     color: "bg-orange-light",
   },
 ];
 
 const ServicesSection = () => {
   return (
-    <div className="flex flex-col max-w-screen-laptopM mx-auto">
+    <section className="max-w-[1200px] mx-auto flex flex-col">
       {/* title, paragraph */}
       <div className="flex justify-between items-center">
         <div className="flex flex-col gap-y-4">
@@ -45,20 +45,21 @@ const ServicesSection = () => {
       </div>
 
       {/* list of services */}
-      <div className="mt-14 mb-10 grid content-center grid-cols-1 mobileXL:grid-cols-2 laptop:grid-cols-4 gap-10">
-        {services.map(({ img, name, color }) => (
-          <div
+      <div className="mt-16 mb-10 grid content-center grid-cols-1 mobileXL:grid-cols-2 laptop:grid-cols-4 gap-10">
+        {services.map(({ img, service, color }) => (
+            <div
+                key={service}
             className="max-w-[290px] rounded-[32px] border border-[#eee]
-            flex flex-col gap-y-6 p-4"
+            flex flex-col gap-y-6 p-4 shadow-sm"
           >
             <div
               className={`${color} rounded-[32px] px-20 py-12 flex items-center justify-center`}
             >
-              <img src={img} alt={name} className="min-w-[96px] min-h-[96px]" />
+              <img src={img} alt={service} className="min-w-[96px] min-h-[96px]" />
             </div>
 
             <div className="flex flex-col items-center text-center gap-y-2">
-              <h3>{name}</h3>
+              <h3>{service}</h3>
               <p className="text-violet-dark/50 text-base">
                 Lorem ipsum is placeholder text commonly used in the graphic
               </p>
@@ -89,7 +90,7 @@ const ServicesSection = () => {
           />
         </svg>
       </button>
-    </div>
+    </section>
   );
 };
 

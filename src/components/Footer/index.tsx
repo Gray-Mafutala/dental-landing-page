@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { RiFacebookFill, RiTwitterFill, RiInstagramLine } from "react-icons/ri";
 import DentalistLogoBlack from "../../assets/svg/dentalist-black.svg";
-import TelephoneIcon from "../../assets/svg/telephone.svg";
+import TelephoneIcon from "../../assets/svg/contact-phone.svg";
 import ClockIcon from "../../assets/svg/clock.svg";
 import LocationIcon from "../../assets/svg/location.svg";
 
