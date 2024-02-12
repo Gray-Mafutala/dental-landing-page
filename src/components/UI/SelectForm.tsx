@@ -3,17 +3,19 @@ import React from "react";
 type SelectFormProps = {
   id: string;
   name?: string;
-  placeholder?: string;
   options: string[];
   label: string;
+  value: string;
+  onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
 };
 
 const SelectForm = ({
   id,
   name,
-  placeholder,
   options,
   label,
+  value,
+  onChange,
 }: SelectFormProps) => {
   const getOptionValue = (option: string) => {
     return option.replace(" ", "-").toLocaleLowerCase();
@@ -30,23 +32,24 @@ const SelectForm = ({
       <select
         id={id}
         name={name}
-        className="rounded-2xl border border-[#eee] p-3
-        text-base font-medium cursor-pointer text-violet-dark
-        outline-none focus:shadow-[0_0_0_2px_#583fbc]
-        focus:border-transparent duration-200"
-        defaultValue={"DEFAULT"}
+        onChange={onChange}
+        value={value}
+        required
+        className="rounded-2xl border border-[#eee]
+        text-base font-medium text-violet-dark cursor-pointer outline-none
+        focus:shadow-[0_0_0_2px_#583fbc] focus:border-transparent duration-200
+        text-ellipsis form-select appearance-none p-3 pr-8 bg-no-repeat"
       >
-        <option
-          disabled
-          className="text-violet-dark/60"
-        >
-          {placeholder}
-        </option>
-        {options.map((option) => (
+        {options.map((option, index) => (
           <option
             key={option}
-            value={getOptionValue(option)}
-            className="text-violet-dark cursor-pointer font-medium p-4"
+            disabled={index === 0 ? true : false}
+            value={index === 0 ? "" : getOptionValue(option)}
+            className={
+              index === 0
+                ? `text-violet-dark/60 font-medium`
+                : `text-violet-dark font-medium`
+            }
           >
             {option}
           </option>

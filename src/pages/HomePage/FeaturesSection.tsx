@@ -52,7 +52,7 @@ const FeaturesSection = () => {
 
             <div className="flex flex-col gap-y-2">
               <h3>{title}</h3>
-              <p className="w-72 text-violet-dark/70">{desc}</p>
+              <p className="w-72 text-violet-dark/60">{desc}</p>
             </div>
           </div>
         ))}

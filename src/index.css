@@ -74,3 +74,10 @@
 .violet-btn-anim:hover::after {
     transform: scaleX(1);
 }
+
+/* for form select element */
+.form-select {
+    background-image: url("./assets//images//HomePage//violet-down-arrow.svg");
+    background-size: 0.7rem;
+    background-position: right 0.7rem center;
+}

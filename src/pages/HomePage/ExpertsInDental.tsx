@@ -15,16 +15,16 @@ const ExpertsInDental = () => {
         <div className="flex flex-col">
           <span className="section-small-title">Experts in dental</span>
           <h2 className="max-w-[590px] mt-4 mb-6">
-            Top-notch dentistry, from Seattle's top dentists.
+            Top-notch dentistry, from Seattle's top dentists
           </h2>
-          <p className="max-w-[510px]">
+          <p className="max-w-[510px] font-medium text-violet-dark/70">
             Lorem ipsum is placeholder text commonly used in the graphic, print,
             and publishing industries for previewing layouts
           </p>
         </div>
 
         {/* bottom list */}
-        <ul className="flex flex-col gap-y-4">
+        <ul className="flex flex-col gap-y-4 text-violet-dark/90">
           <li className="flex gap-x-3 items-center whitespace-nowrap">
             <img src={VioletCircleOk} alt="" />
             <span>Top quality dental team</span>

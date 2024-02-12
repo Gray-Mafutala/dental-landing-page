@@ -30,7 +30,7 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section className="max-w-[1200px] mx-auto flex flex-col">
+    <section className="max-w-[1200px] mx-auto w-full flex flex-col">
       {/* title, paragraph */}
       <div className="flex justify-between items-center">
         <div className="flex flex-col gap-y-4">
@@ -45,23 +45,30 @@ const ServicesSection = () => {
       </div>
 
       {/* list of services */}
-      <div className="mt-16 mb-10 grid content-center grid-cols-1 mobileXL:grid-cols-2 laptop:grid-cols-4 gap-10">
+      <div
+        className="mt-16 mb-10 grid grid-cols-1 content-center 
+        mobileXL:grid-cols-2 laptop:grid-cols-4 gap-10"
+      >
         {services.map(({ img, service, color }) => (
-            <div
-                key={service}
+          <div
+            key={service}
             className="max-w-[290px] rounded-[32px] border border-[#eee]
-            flex flex-col gap-y-6 p-4 shadow-sm"
+            flex flex-col gap-y-6 p-4 pb-8 shadow-sm"
           >
             <div
               className={`${color} rounded-[32px] px-20 py-12 flex items-center justify-center`}
             >
-              <img src={img} alt={service} className="min-w-[96px] min-h-[96px]" />
+              <img
+                src={img}
+                alt={service}
+                className="min-w-[96px] min-h-[96px] object-cover"
+              />
             </div>
 
             <div className="flex flex-col items-center text-center gap-y-2">
               <h3>{service}</h3>
-              <p className="text-violet-dark/50 text-base">
-                Lorem ipsum is placeholder text commonly used in the graphic
+              <p className="text-violet-dark/60 text-base">
+                Lorem ipsum is placeholder text commonly used in the...
               </p>
             </div>
           </div>
@@ -83,8 +90,8 @@ const ServicesSection = () => {
             className="fill-[#583fbc] group-hover:fill-white duration-300 ease-in"
           />
           <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             d="m11 8 4 4-4 4"
             className="stroke-[2] stroke-white group-hover:stroke-violet duration-300 ease-in"
           />

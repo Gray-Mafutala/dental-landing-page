@@ -6,8 +6,8 @@ import DentalSurgeryImg from "../../assets/images/HomePage/patient-receiving-den
 const DentalEmergency = () => {
   return (
     <section
-      className="max-w-[1200px] mx-auto
-      flex justify-between w-full items-center"
+      className="max-w-[1200px] mx-auto flex justify-between w-full
+      items-center"
     >
       {/* left content */}
       <div className="max-w-[550px]">
@@ -23,7 +23,7 @@ const DentalEmergency = () => {
         <span className="section-small-title">Dental 24 emergency</span>
 
         <h2 className="max-w-[550px] mt-4 mb-6">
-          Gentle, friendly treatment from our locally practice.
+          Gentle, friendly treatment from our locally practice
         </h2>
 
         <p className="max-w-[510px] text-violet-dark/70 mb-16">

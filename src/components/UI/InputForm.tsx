@@ -4,8 +4,10 @@ type InputFormProps = {
   type?: HTMLInputTypeAttribute | undefined;
   id: string;
   name?: string;
-  label: string;
   placeholder: string;
+  label: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  value: string;
 };
 
 const InputForm = ({
@@ -14,6 +16,8 @@ const InputForm = ({
   name,
   placeholder,
   label,
+  onChange,
+  value,
 }: InputFormProps) => {
   return (
     <div className="flex flex-col gap-y-3">
@@ -28,9 +32,11 @@ const InputForm = ({
         id={id}
         name={name}
         placeholder={placeholder}
+        onChange={onChange}
+        value={value}
         className="text-base font-medium p-3 rounded-2xl border
-        border-[#eee] text-violet-dark placeholder-violet-dark/60
-        outline-none focus:shadow-[0_0_0_2px_#583fbc] focus:border-transparent
+        border-[#eee] text-violet-dark outline-none
+        focus:shadow-[0_0_0_2px_#583fbc] focus:border-transparent
         duration-200"
       />
     </div>

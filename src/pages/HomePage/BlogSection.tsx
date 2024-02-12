@@ -48,7 +48,7 @@ const BlogSection = () => {
             />
 
             <span className="section-small-title">{category}</span>
-            <h4 className="text-lg font-bold mt-2 mb-3">{title}</h4>
+            <h4 className="text-lg text-violet-dark font-bold mt-2 mb-3">{title}</h4>
 
             <p className="text-base">
               Lorem ipsum is placeholder text commonly used in the graphic,

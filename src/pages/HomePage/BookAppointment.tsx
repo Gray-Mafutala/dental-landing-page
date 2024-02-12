@@ -6,16 +6,36 @@ import mapImg from "../../assets/images/HomePage/map-img.png";
 import InputForm from "../../components/UI/InputForm";
 import SelectForm from "../../components/UI/SelectForm";
 
+type BookAppointmentData = {
+  name: string;
+  email: string;
+  department: string;
+  message: string;
+};
+
 const BookAppointment = () => {
   const [appointmentData, setAppointmentData] = useState({
     name: "",
     email: "",
-    serviceSelected: "",
-    departmentSelected: "",
+    service: "",
+    department: "",
     message: "",
   });
-    
-    const selectHandleChange = (e)=>  setSelected(...appointmentData,  e.target.value);
+
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+    >
+  ) => {
+    const field = e.target.name;
+    const value = e.target.value;
+    setAppointmentData({ ...appointmentData, [field]: value });
+  };
+
+  const sendBookAppointmentData = (data: BookAppointmentData) => {
+    // processing here...
+    console.log(data);
+  };
 
   return (
     <section className="max-w-[1200px] w-full mx-auto flex justify-between gap-x-20">
@@ -49,7 +69,7 @@ const BookAppointment = () => {
         <div>
           <span className="section-small-title">Book appointment</span>
           <h2 className="mt-4 mb-6">Care at Dentalist is pleasure</h2>
-          <p className="max-w-[620px]">
+          <p className="max-w-[620px] text-violet-dark/70">
             Lorem ipsum is placeholder text commonly used in the graphic, print,
             and publishing industries for previewing layouts and visual.
           </p>
@@ -61,21 +81,30 @@ const BookAppointment = () => {
           <div className="grid grid-cols-2 gap-x-10 gap-y-8">
             <InputForm
               id="form-book-appointment-name"
+              name="name"
               placeholder="Enter your name..."
               label="Name"
+              onChange={handleChange}
+              value={appointmentData.name}
             />
             <InputForm
               type="email"
+              name="email"
               id="form-book-appointment-email"
               placeholder="Your email address..."
               label="Email address"
+              value={appointmentData.email}
+              onChange={handleChange}
             />
 
             <SelectForm
               id="form-book-appointment-services"
+              name="service"
               label="Services"
-              placeholder="Select service"
+              value={appointmentData.service}
+              onChange={handleChange}
               options={[
+                "Select service",
                 "Teeth Whitening",
                 "Dentures",
                 "Implants",
@@ -85,14 +114,16 @@ const BookAppointment = () => {
             />
             <SelectForm
               id="form-book-appointment-department"
+              name="department"
               label="Department"
-              placeholder="Select department"
+              value={appointmentData.department}
+              onChange={handleChange}
               options={[
-                "Teeth Whitening",
-                "Dentures",
-                "Implants",
-                "Whitening",
-                "Root Canal",
+                "Select department",
+                "Developmental & Surgical Sciences",
+                "Diagnostic & Biological Sciences",
+                "Primary Dental Care",
+                "Restorative Sciences",
               ]}
             />
           </div>
@@ -108,8 +139,11 @@ const BookAppointment = () => {
 
             <textarea
               id="form-book-appointment-message"
+              name="message"
               maxLength={1000}
               placeholder="Enter your message..."
+              value={appointmentData.message}
+              onChange={handleChange}
               className="min-h-48 text-base font-medium px-4 py-3 rounded-2xl
               border border-[#eee] text-violet-dark outline-none resize-none
               focus:shadow-[0_0_0_2px_#583fbc] focus:border-transparent 
@@ -130,7 +164,10 @@ const BookAppointment = () => {
           </div>
 
           {/* btn to bokk appointment */}
-          <VioletButton addStyles="rounded-2xl after:rounded-2xl px-10 py-5 self-start">
+          <VioletButton
+            addStyles="rounded-2xl after:rounded-2xl px-10 py-5 self-start"
+            onClick={() => sendBookAppointmentData(appointmentData)}
+          >
             Book an appointment
           </VioletButton>
         </div>

@@ -9,7 +9,7 @@ import LocationIcon from "../../assets/svg/location.svg";
 
 const Footer = () => {
   return (
-    <footer className="mt-36 bg-violet-dark text-white pb-12 pt-24 px-5">
+    <footer className="mt-36 bg-violet-dark text-white pb-7 pt-24 px-5">
       {/* container */}
       <div className="max-w-screen-laptopM w-full mx-auto flex flex-col">
         {/* A - 3 lists */}
@@ -28,36 +28,37 @@ const Footer = () => {
             </Link>
 
             <p
-              className="text-base laptop:text-lg max-w-[464px] laptop:max-w-[520px] text-white/60 
-              mt-6 mb-8 tablet:mt-8 tablet:mb-16"
+              className="text-base laptop:text-lg max-w-[464px] 
+              laptop:max-w-[520px] text-white/70 mt-6 mb-8
+              tablet:mt-8 tablet:mb-16"
             >
               Dental Care Seattle is a top-rated local practice for cosmetic,
               preventative, and restorative dentistry on First Hill.
             </p>
 
             <div className="flex flex-col gap-y-4  tablet:gap-y-6">
-              <p className="text-sm font-bold text-white/60 uppercase">
+              <p className="text-sm font-bold text-white/70 uppercase">
                 Follow us on
               </p>
               <div className="flex items-center justify-between">
-                <a href="/" className="hover:text-violet-hover duration-300">
+                <Link to="/" className="hover:text-violet-hover duration-300">
                   <RiFacebookFill size={24} className="-mx-1" />
-                </a>
+                </Link>
 
-                <a href="/" className="hover:text-violet-hover duration-300">
+                <Link to="/" className="hover:text-violet-hover duration-300">
                   <RiTwitterFill size={24} />{" "}
-                </a>
+                </Link>
 
-                <a href="/" className="hover:text-violet-hover duration-300">
+                <Link to="/" className="hover:text-violet-hover duration-300">
                   <RiInstagramLine size={24} />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
 
           {/* 2 - Quick Links */}
           <ul className="flex flex-col gap-y-6 whitespace-nowrap text-base laptop:text-lg">
-            <li className="uppercase text-white/60 font-bold">Quick Links</li>
+            <li className="uppercase text-white/70 font-bold">Quick Links</li>
 
             <li className="hover:text-violet-hover duration-300">
               <Link to="/about">About Us</Link>
@@ -81,7 +82,7 @@ const Footer = () => {
             className="flex flex-col gap-y-6 whitespace-nowrap font-bold text-base 
             laptop:text-lg"
           >
-            <li className="uppercase text-white/60">Contact & Information</li>
+            <li className="uppercase text-white/70">Contact & Information</li>
 
             <li
               className="flex items-end tablet:items-center gap-x-6 justify-center 
@@ -93,7 +94,7 @@ const Footer = () => {
                 className="w-9 laptop:w-16 h-auto"
               />
               <p className="flex flex-col gap-y-1">
-                <span className="text-white/60 text-sm laptop:text-base">
+                <span className="text-white/70 text-sm laptop:text-base">
                   Phone Number
                 </span>
                 <span>+088 123 654 987</span>
@@ -110,7 +111,7 @@ const Footer = () => {
                 className="w-9 laptop:w-16 h-auto"
               />
               <p className="flex flex-col gap-y-1">
-                <span className="text-white/60 text-sm laptop:text-base">
+                <span className="text-white/70 text-sm laptop:text-base">
                   Open Hour
                 </span>
                 <span>09:00 AM - 18:00 PM</span>
@@ -127,7 +128,7 @@ const Footer = () => {
                 className="w-9 laptop:w-16 h-auto"
               />
               <p className="flex flex-col gap-y-1">
-                <span className="text-white/60 text-sm laptop:text-base">
+                <span className="text-white/70 text-sm laptop:text-base">
                   Clinic Address
                 </span>
                 <span className="whitespace-normal">
@@ -140,10 +141,11 @@ const Footer = () => {
 
         {/* B - ©Dentalist. All Right Reserved, terms of use... */}
         <div
-          className="mt-28 font-medium text-base text-white flex flex-col text-center gap-y-5 
-          justify-between tablet:flex-row tablet:text-left"
+          className="mt-28 font-medium text-base text-white flex flex-col
+          text-center gap-y-5 justify-between tablet:flex-row
+          tablet:text-left"
         >
-          <p className="flex-grow text-white/60">
+          <p className="flex-grow text-white/70">
             ©Dentalist. All Right Reserved
           </p>
           <div
