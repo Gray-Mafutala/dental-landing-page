@@ -1,9 +1,9 @@
 import React from "react";
 
-import DianneRussellPhoto from "../../assets/images/HomePage/dianne-russell.png";
-import EstherHoward from "../../assets/images/HomePage/esther-howard.jpg";
-import DarrellSteward from "../../assets/images/HomePage/darrell-steward.png";
-import JennyWilson from "../../assets/images/HomePage/jenny-wilson.png";
+import DianneRussellPhoto from "../../assets/images/AboutPage/dianne-russell.png";
+import EstherHoward from "../../assets/images/AboutPage/esther-howard.jpg";
+import DarrellSteward from "../../assets/images/AboutPage/darrell-steward.png";
+import JennyWilson from "../../assets/images/AboutPage/jenny-wilson.png";
 
 const teamMembers = [
   { photo: DianneRussellPhoto, name: "Dianne Russell" },

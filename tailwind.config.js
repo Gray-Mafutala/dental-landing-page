@@ -11,6 +11,7 @@ export default {
     colors: {
       transparent: "transparent",
       current: "currentColor",
+      black: "#000",
       white: "#fff",
       violet: "#583fbc",
       "violet-dark": "#181945",

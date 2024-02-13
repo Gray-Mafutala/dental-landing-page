@@ -1,7 +1,7 @@
 import React from "react";
 
 import VioletButton from "../../components/UI/VioletButton";
-import DentistAndHisSmilingPatientImg from "../../assets/images/HomePage/dentist-and-his-smiling-patient.png";
+import DentistAndHisSmilingPatientImg from "../../assets/images/AboutPage/dentist-and-his-smiling-patient.png";
 
 const AboutUsSection = () => {
   return (

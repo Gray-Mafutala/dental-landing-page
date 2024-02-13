@@ -81,3 +81,16 @@
     background-size: 0.7rem;
     background-position: right 0.7rem center;
 }
+
+/* for linear-background transition on FaqAccordion component */
+.linear-transition {
+    @apply relative z-[2];
+}
+
+.linear-transition::before {
+    @apply content-[""] absolute inset-0 bg-gradient-to-b from-[#dbeffa] z-[1] opacity-0 transition-opacity duration-300 ease-linear
+}
+
+.linear-transition.active::before {
+    @apply opacity-100 transition-opacity duration-300 ease-linear
+}

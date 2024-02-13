@@ -1,12 +1,12 @@
 import React from "react";
 
-import OperatingRoomImg from "../../assets/images/HomePage/operating-room.png";
+import OperatingRoomImg from "../../assets/images/AboutPage/operating-room.png";
 
 const SafetySection = () => {
   return (
     <section
       className="max-w-[1200px] mx-auto w-full bg-violet-light
-      rounded-[48px] pt-24 px-4 flex flex-col items-center gap-y-24
+      rounded-[48px] pt-20 px-4 flex flex-col items-center gap-y-24
       mb-48"
     >
       {/* top content */}
