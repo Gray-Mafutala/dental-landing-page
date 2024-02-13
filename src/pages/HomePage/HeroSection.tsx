@@ -9,7 +9,7 @@ const HeroSection = () => {
     <section
       className="bg-sky-light bg-hero-3-vectors bg-no-repeat
       bg-[center_2rem] rounded-[48px] px-24 flex justify-between
-      items-center"
+      items-center pt-10"
     >
       {/* left content */}
       <div className="w-full flex flex-col">

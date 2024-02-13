@@ -1,17 +1,18 @@
 import React from "react";
-import VioletButton from "../../components/UI/VioletButton";
-import HeroImg from "../../assets/svg/HomePage/hero-img-section1.png";
 
-const Section1 = () => {
+import VioletButton from "../../components/UI/VioletButton";
+import HeroImg from "../../assets/images/ServicesPage/two-dentists-and-a-patient.png";
+//px-24 
+const HeroSection = () => {
   return (
-    <div
-      className="mt-2 bg-sky-light rounded-[48px] px-28 py-24 flex justify-between
-      items-center max-h-[600px] gap-x-12"
+    <section
+      className="bg-sky-light pl-24 pr-8 rounded-[48px] pt-20 pb-20 flex
+      justify-center items-center max-h-[600px] gap-x-2 mb-40"
     >
       {/* left content */}
       <div className="flex flex-col">
         <h1>Root canals</h1>
-        <p className="max-w-[490px] mt-8 mb-24 text-violet-dark/70">
+        <p className="max-w-[490px] mt-8 mb-14 text-violet-dark/70">
           Root canals have gotten a bad reputation, but us dentists don’t know
           why! These are the types of treatments that actually make you feel
           better!
@@ -23,15 +24,15 @@ const Section1 = () => {
       </div>
 
       {/* right content */}
-      <div className="border w-full h-full">
+      <div className="maw-w-[730px] flex justify-center -mb-52">
         <img
           src={HeroImg}
           alt="Dental surgery"
-          className="max-w-md w-full h-auto object-cover"
+          className="w-full h-auto object-cover"
         />
       </div>
-    </div>
+    </section>
   );
 };
 
-export default Section1;
+export default HeroSection;

@@ -8,7 +8,7 @@ import FeaturesSection from "./FeaturesSection";
 import ExpertsInDental from "./ExpertsInDental";
 import Testimonials from "./Testimonials";
 import BlogSection from "./BlogSection";
-import BookAppointment from "./BookAppointment";
+import BookAppointment from "../../components/BookAppointment";
 
 const Home = () => {
   return (

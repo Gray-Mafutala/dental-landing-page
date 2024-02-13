@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-import VioletButton from "../../components/UI/VioletButton";
+import VioletButton from "../UI/VioletButton";
 import phoneViolet from "../../assets/images/HomePage/contact-phone-violet.svg";
 import mapImg from "../../assets/images/HomePage/map-img.png";
-import InputForm from "../../components/UI/InputForm";
-import SelectForm from "../../components/UI/SelectForm";
+import InputForm from "../UI/InputForm";
+import SelectForm from "../UI/SelectForm";
 
 type BookAppointmentData = {
   name: string;

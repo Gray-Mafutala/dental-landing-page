@@ -39,16 +39,29 @@ const BlogSection = () => {
         tablet:flex-row"
       >
         {articlesPreview.map(({ cover, category, title }) => (
-          <div key={title} className="rounded-[2rem] border border-[#eee] shadow-sm p-4 pb-10">
+          <div
+            key={title}
+            className="rounded-[2rem] border border-[#eee] shadow-sm p-4 pb-10"
+          >
             {/* cover and date */}
-            <img
-              src={cover}
-              alt={title}
-              className="w-[368px] h-[250px] object-cover rounded-[2rem] mb-6"
-            />
+            <div className="w-[368px] h-[250px] mb-6 relative">
+              <div className="absolute top-4 left-4 pt-1 pb-2 px-5 bg-white rounded-2xl flex flex-col items-center text-center">
+                <span className="text-lg font-bold text-violet-dark">23</span>
+                <span className="text-sm font-bold text-violet-dark/60">
+                  Jan
+                </span>
+              </div>
+              <img
+                src={cover}
+                alt={title}
+                className="w-full h-full object-cover rounded-[2rem]"
+              />
+            </div>
 
             <span className="section-small-title">{category}</span>
-            <h4 className="text-lg text-violet-dark font-bold mt-2 mb-3">{title}</h4>
+            <h4 className="text-lg text-violet-dark font-bold mt-2 mb-3">
+              {title}
+            </h4>
 
             <p className="text-base">
               Lorem ipsum is placeholder text commonly used in the graphic,

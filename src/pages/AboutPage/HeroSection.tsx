@@ -3,7 +3,7 @@ import React from "react";
 import VioletButton from "../../components/UI/VioletButton";
 import DentistAndHisSmilingPatientImg from "../../assets/images/AboutPage/dentist-and-his-smiling-patient.png";
 
-const AboutUsSection = () => {
+const HeroSection = () => {
   return (
     <section
       className="mt-10 max-w-[1200px] w-full mx-auto flex items-center
@@ -34,4 +34,4 @@ const AboutUsSection = () => {
   );
 };
 
-export default AboutUsSection;
+export default HeroSection;
