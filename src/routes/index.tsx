@@ -5,8 +5,8 @@ import { useRoutes } from "react-router-dom";
 const HomePage = React.lazy(() => import("../pages/HomePage"));
 const AboutPage = React.lazy(() => import("../pages/AboutPage"));
 const ServicesPage = React.lazy(() => import("../pages/ServicesPage"));
-const Blog = React.lazy(() => import("../pages/Blog"));
-const Contact = React.lazy(() => import("../pages/Contact"));
+const BlogPage = React.lazy(() => import("../pages/BlogPage"));
+const ContactPage = React.lazy(() => import("../pages/ContactPage"));
 const PageNotFound = React.lazy(() => import("../pages/PageNotFound"));
 
 const Routing = () => {
@@ -14,8 +14,8 @@ const Routing = () => {
     { path: "/", element: <HomePage /> },
     { path: "/about", element: <AboutPage /> },
     { path: "/services", element: <ServicesPage /> },
-    { path: "/blog", element: <Blog /> },
-    { path: "/contact", element: <Contact /> },
+    { path: "/blog", element: <BlogPage /> },
+    { path: "/contact", element: <ContactPage /> },
     { path: "/*", element: <PageNotFound /> },
   ]);
 

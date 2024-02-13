@@ -7,7 +7,7 @@ const HeroSection = () => {
   return (
     <section
       className="bg-sky-light pl-24 pr-8 rounded-[48px] pt-20 pb-20 flex
-      justify-center items-center max-h-[600px] gap-x-2 mb-40"
+      justify-center items-center gap-x-2 mb-40"
     >
       {/* left content */}
       <div className="flex flex-col">
