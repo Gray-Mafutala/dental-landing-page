@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+
+import HeroSection from "./HeroSection";
+import ArticleListSection from "./ArticleListSection";
 
 const BlogPage = () => {
   return (
-    <section>Blog</section>
-  )
-}
+    <>
+      <HeroSection />
+      <ArticleListSection />
+    </>
+  );
+};
 
-export default BlogPage
+export default BlogPage;

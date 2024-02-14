@@ -6,15 +6,18 @@ import FormBookAppointment from "../FormBookAppointment";
 
 const BookAppointment = () => {
   return (
-    <section className="max-w-[1200px] w-full mx-auto flex justify-between gap-x-20">
+    <section
+      className="max-w-[1200px] w-full mx-auto flex justify-between
+      gap-x-20"
+    >
       {/* left content - maps address */}
       <div className="relative">
         {/* maps */}
-        <div className="max-w-[550px]">
+        <div className="max-w-[550px] h-full">
           <img
             src={mapImg}
             alt="35 West Dental Street California 1004"
-            className="w-full h-auto object-cover rounded-[2rem]"
+            className="w-full h-full object-cover rounded-[3rem]"
           />
         </div>
 
@@ -43,7 +46,7 @@ const BookAppointment = () => {
         </div>
 
         {/* form to book an appointment */}
-        <FormBookAppointment addStylesToForm="mt-12 mb-10" />
+        <FormBookAppointment addStylesToForm="mt-12" />
       </div>
     </section>
   );

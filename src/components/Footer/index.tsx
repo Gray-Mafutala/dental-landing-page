@@ -73,7 +73,7 @@ const Footer = () => {
               <Link to="/blog">Blog</Link>
             </li>
             <li className="hover:text-violet-hover duration-300">
-              <Link to="/">FAQs</Link>
+              <Link to="/about/:faq">FAQs</Link>
             </li>
           </ul>
 
@@ -97,7 +97,7 @@ const Footer = () => {
                 <span className="text-white/70 text-sm laptop:text-base">
                   Phone Number
                 </span>
-                <span>+088 123 654 987</span>
+                <span className="text-white font-bold">+088 123 654 987</span>
               </p>
             </li>
 
@@ -114,7 +114,7 @@ const Footer = () => {
                 <span className="text-white/70 text-sm laptop:text-base">
                   Open Hour
                 </span>
-                <span>09:00 AM - 18:00 PM</span>
+                <span className="text-white font-bold">09:00 AM - 18:00 PM</span>
               </p>
             </li>
 
@@ -131,7 +131,7 @@ const Footer = () => {
                 <span className="text-white/70 text-sm laptop:text-base">
                   Clinic Address
                 </span>
-                <span className="whitespace-normal">
+                <span className="text-white font-bold whitespace-normal">
                   35 West Dental Street California 1004
                 </span>
               </p>
@@ -152,8 +152,12 @@ const Footer = () => {
             className="flex flex-col text-center justify-center gap-y-3 mobileM:flex-row mobileM:text-left 
             mobileM:gap-x-16 -order-1 tablet:order-1"
           >
-            <p>Terms of Use</p>
-            <p>Privacy Policy</p>
+            <Link to="/" className="hover:text-violet-hover duration-300">
+              Terms of Use
+            </Link>
+            <Link to="/" className="hover:text-violet-hover duration-300">
+              Privacy Policy
+            </Link>
           </div>
         </div>
       </div>

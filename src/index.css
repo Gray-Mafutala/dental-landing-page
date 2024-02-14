@@ -22,6 +22,10 @@
         @apply text-violet-dark text-xl -tracking-[0.4px] font-bold;
     }
 
+    p {
+        @apply text-violet-dark/70 text-lg font-medium
+    }
+
     button {
         @apply whitespace-nowrap select-none
     }

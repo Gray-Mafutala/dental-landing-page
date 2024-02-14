@@ -16,7 +16,7 @@ const HeroSection = () => {
       </p>
 
       {/* bottom content - form to book an appointment */}
-      <FormBookAppointment addStylesToForm="bg-white py-16 px-24 rounded-[3rem] text-left shadow-md -mb-[420px]" />
+      <FormBookAppointment addStylesToForm="bg-white pt-14 pb-12 px-24 rounded-[3rem] text-left shadow-md -mb-[420px]" />
     </section>
   );
 };
