@@ -19,7 +19,11 @@ const OurPrioritySection = () => {
           and publishing industries for previewing layouts and visual mockups.
         </p>
 
-        <VioletButton addStyles="rounded-2xl after:rounded-2xl px-10 py-5 self-start">
+        <VioletButton
+          isLink={true}
+          link="/contact"
+          addStyles="rounded-2xl after:rounded-2xl px-10 py-5 self-start"
+        >
           Book an appointment
         </VioletButton>
       </div>

@@ -46,6 +46,8 @@ const Header = () => {
 
           {/* Book an appointment Button */}
           <VioletButton
+            isLink={true}
+            link="/contact"
             addStyles="hidden laptopM:block text-sm laptop:text-base
             px-6 py-4 rounded-xl after:rounded-xl mr-5"
           >

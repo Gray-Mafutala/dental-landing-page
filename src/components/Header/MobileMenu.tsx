@@ -44,6 +44,9 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
 
       {/*  btn to Book an appointment */}
       <VioletButton
+        isLink={true}
+        link="/contact"
+        onClick={onClose}
         addStyles="mt-4 text-sm laptop:text-base px-6 py-4 rounded-xl 
         after:rounded-xl mr-5"
       >

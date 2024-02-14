@@ -17,7 +17,11 @@ const HeroSection = () => {
           year, but every time you take a bite, tell a joke, laugh, or share a
           kiss.
         </p>
-        <VioletButton addStyles="rounded-2xl after:rounded-2xl px-10 py-5 self-start">
+        <VioletButton
+          isLink={true}
+          link="/contact"
+          addStyles="rounded-2xl after:rounded-2xl px-10 py-5 self-start"
+        >
           Contact Us
         </VioletButton>
       </div>
