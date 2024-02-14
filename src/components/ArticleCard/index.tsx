@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 type ArticleCardProps = {
   title: string;
   cover: string;
   category: string;
   abstract: string;
+  link: string;
 };
 
 const ArticleCard = ({
@@ -12,12 +14,14 @@ const ArticleCard = ({
   cover,
   category,
   abstract,
+  link,
 }: ArticleCardProps) => {
   return (
-    <div
+    <Link
       key={title}
+      to={link}
       className="max-w-[400px] rounded-[2rem] border border-[#eee]
-      p-4 pb-10 cursor-pointer hover:scale-105 hover:shadow-sm duration-300"
+      p-4 pb-10 hover:scale-105 hover:shadow-sm duration-300"
     >
       {/* cover and date */}
       <div className="w-[368px] h-[250px] mb-6 relative">
@@ -36,7 +40,7 @@ const ArticleCard = ({
       <h4 className="text-lg text-violet-dark font-bold mt-2 mb-3">{title}</h4>
 
       <p className="text-base line-clamp-2">{abstract}</p>
-    </div>
+    </Link>
   );
 };
 

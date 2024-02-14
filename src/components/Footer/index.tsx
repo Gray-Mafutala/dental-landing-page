@@ -41,15 +41,15 @@ const Footer = () => {
                 Follow us on
               </p>
               <div className="flex items-center justify-between">
-                <Link to="/" className="hover:text-violet-hover duration-300">
+                <Link to="" className="hover:text-violet-hover duration-300">
                   <RiFacebookFill size={24} className="-mx-1" />
                 </Link>
 
-                <Link to="/" className="hover:text-violet-hover duration-300">
+                <Link to="" className="hover:text-violet-hover duration-300">
                   <RiTwitterFill size={24} />{" "}
                 </Link>
 
-                <Link to="/" className="hover:text-violet-hover duration-300">
+                <Link to="" className="hover:text-violet-hover duration-300">
                   <RiInstagramLine size={24} />
                 </Link>
               </div>

@@ -6,7 +6,7 @@ import articleCoverImg3 from "../../assets/images/BlogPage/article-cover-3.png";
 import articleCoverImg4 from "../../assets/images/BlogPage/article-cover-4.png";
 import articleCoverImg5 from "../../assets/images/BlogPage/article-cover-5.png";
 import articleCoverImg6 from "../../assets/images/BlogPage/article-cover-6.png";
-import ArticleCard from "../../components/UI/ArticleCard";
+import ArticleCard from "../../components/ArticleCard";
 
 const articleList = [
   {
@@ -60,6 +60,7 @@ const ArticleListSection = () => {
             cover={cover}
             title={title}
             category={category}
+            link="/blog/new-tech"
             abstract="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing..."
           />
         ))}
@@ -99,7 +100,7 @@ const ArticleListSection = () => {
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="stroke-violet-dark stroke-2"
+              className="stroke-current stroke-2"
               d="m1 1 6 6-6 6"
             />
           </svg>

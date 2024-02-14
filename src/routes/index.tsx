@@ -6,6 +6,7 @@ const HomePage = React.lazy(() => import("../pages/HomePage"));
 const AboutPage = React.lazy(() => import("../pages/AboutPage"));
 const ServicesPage = React.lazy(() => import("../pages/ServicesPage"));
 const BlogPage = React.lazy(() => import("../pages/BlogPage"));
+const BlogPost = React.lazy(() => import("../pages/BlogPost"));
 const ContactPage = React.lazy(() => import("../pages/ContactPage"));
 const PageNotFound = React.lazy(() => import("../pages/PageNotFound"));
 
@@ -14,7 +15,11 @@ const Routing = () => {
     { path: "/", element: <HomePage /> },
     { path: "/about", element: <AboutPage /> },
     { path: "/services", element: <ServicesPage /> },
-    { path: "/blog", element: <BlogPage /> },
+    {
+      path: "/blog",
+      element: <BlogPage />,
+    },
+    { path: "/blog/new-tech", element: <BlogPost /> },
     { path: "/contact", element: <ContactPage /> },
     { path: "/*", element: <PageNotFound /> },
   ]);

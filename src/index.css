@@ -29,6 +29,27 @@
     button {
         @apply whitespace-nowrap select-none
     }
+
+    /* remove "X" icon from search input */
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-decoration,
+    input[type="search"]::-webkit-search-results-button,
+    input[type="search"]::-webkit-search-results-decoration {
+        display: none;
+    }
+
+    /* In Internet Explorer */
+    input[type="search"]::-ms-clear {
+        display: none;
+        height: 0;
+        width: 0;
+    }
+
+    input[type="search"]::-ms-reveal {
+        display: none;
+        height: 0;
+        width: 0;
+    }
 }
 
 @layer components {

@@ -23,16 +23,14 @@ const articleList = [
   },
 ];
 
-const BlogSection = () => {
+const ArticleListSection = () => {
   return (
     <section
       className="max-w-[1200px] mx-auto flex flex-col items-center
       gap-y-16"
     >
-      <div className="flex flex-col gap-y-4 items-center text-center">
-        <span className="section-small-title">Blog</span>
-        <h2>Stay updated with our latest news</h2>
-      </div>
+      {/* title */}
+      <h2 className="text-center">Stay updated with our latest news</h2>
 
       {/* some articles */}
       <div
@@ -54,4 +52,4 @@ const BlogSection = () => {
   );
 };
 
-export default BlogSection;
+export default ArticleListSection;

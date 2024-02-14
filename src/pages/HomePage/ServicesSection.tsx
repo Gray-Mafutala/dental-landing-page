@@ -81,7 +81,6 @@ const ServicesSection = () => {
         hover:bg-violet hover:text-white duration-300 ease-in"
       >
         View all service list
-        {/*<img src={VioletRightArrow} alt="" className="w-6 h-6" />*/}
         <svg className="group w-6 h-6 fill-none">
           <circle
             cx="12"
