@@ -1,5 +1,3 @@
-import React from "react";
-
 import articleCoverImg1 from "../../assets/images/BlogPage/article-cover-1.png";
 import articleCoverImg2 from "../../assets/images/BlogPage/article-cover-2.png";
 import articleCoverImg3 from "../../assets/images/BlogPage/article-cover-3.png";

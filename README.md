@@ -2,7 +2,7 @@
 
 ### 🖈 Dental Landing Page
 
- - **Take a look at it** [`Dentalist`](https://gray-mafutala.github.io/dentalist/) 👀
+ - **Take a look at it** [`Dentalist`](https://gray-mafutala.github.io/dental-landing-page/) 👀
  - 🔗 Attribution for Figma design [`here`](https://www.figma.com/community/file/1242074740144270051)
 ---
 
@@ -13,7 +13,7 @@
 
   ![home-page-features-section](/readme-img/home-page-features-section.PNG)
 
-  ![home-page-testimonials](/readme-img/testimonials.PNG)
+  ![home-page-testimonials](/readme-img/home-page-testimonials.PNG)
 
   ![latest-articles.PNG](/readme-img/latest-articles.PNG)
 

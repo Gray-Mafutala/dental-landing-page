@@ -1,5 +1,3 @@
-import React from "react";
-
 import DianneRussellPhoto from "../../assets/images/AboutPage/dianne-russell.png";
 import EstherHoward from "../../assets/images/AboutPage/esther-howard.jpg";
 import DarrellSteward from "../../assets/images/AboutPage/darrell-steward.png";

@@ -1,5 +1,3 @@
-import React from "react";
-
 import FormBookAppointment from "../../components/FormBookAppointment";
 
 const HeroSection = () => {

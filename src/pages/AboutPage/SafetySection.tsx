@@ -1,5 +1,3 @@
-import React from "react";
-
 import OperatingRoomImg from "../../assets/images/AboutPage/operating-room.png";
 
 const SafetySection = () => {

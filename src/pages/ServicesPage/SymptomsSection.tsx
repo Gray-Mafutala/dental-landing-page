@@ -1,5 +1,3 @@
-import React from "react";
-
 import sontaneousPainIcon from "../../assets/images/ServicesPage/sontaneous-pain.svg";
 import discolorationOfToothIcon from "../../assets/images/ServicesPage/discoloration-of-tooth.svg";
 import middleNightPainIcon from "../../assets/images/ServicesPage/middle-night-pain.svg";

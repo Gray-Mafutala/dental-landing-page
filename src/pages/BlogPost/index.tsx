@@ -1,5 +1,3 @@
-import React from "react";
-
 import ArticleContent from "./ArticleContent";
 import ArticleListSection from "./ArticleListSection";
 

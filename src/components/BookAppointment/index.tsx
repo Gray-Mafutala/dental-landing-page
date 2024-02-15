@@ -1,5 +1,3 @@
-import React from "react";
-
 import phoneViolet from "../../assets/images/HomePage/contact-phone-violet.svg";
 import mapImg from "../../assets/images/HomePage/map-img.png";
 import FormBookAppointment from "../FormBookAppointment";

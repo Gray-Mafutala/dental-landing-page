@@ -1,5 +1,3 @@
-import React from "react";
-
 import photo1 from "../../assets/images/ServicesPage/gallery-photo-1.png";
 import photo2 from "../../assets/images/ServicesPage/gallery-photo-2.png";
 import photo3 from "../../assets/images/ServicesPage/gallery-photo-3.png";

@@ -1,5 +1,3 @@
-import React from "react";
-
 const DentalistIsReImagining = () => {
   return (
     <section className="flex flex-col items-center gap-y-8">

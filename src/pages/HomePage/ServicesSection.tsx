@@ -1,5 +1,3 @@
-import React from "react";
-
 import DenturesIcon from "../../assets/images/HomePage/dentures.svg";
 import ImplantsIcon from "../../assets/images/HomePage/implants.svg";
 import WhiteningIcon from "../../assets/images/HomePage/whitening.svg";

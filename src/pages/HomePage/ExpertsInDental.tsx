@@ -1,5 +1,3 @@
-import React from "react";
-
 import YoungAsianFemaleDentistImg from "../../assets/images/HomePage/young-asian-female-dentist.png";
 import VioletCircleOk from "../../assets/images/HomePage/violet-circle-ok.svg";
 

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 type VioletButtonProps = {
-  type?: "submit" | "reset" | "button" | undefined;
+  type?: "submit" | "reset" | "button";
   isLink?: boolean;
   link?: string;
   addStyles?: string;

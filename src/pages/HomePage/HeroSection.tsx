@@ -1,5 +1,3 @@
-import React from "react";
-
 import VioletButton from "../../components/UI/VioletButton";
 import HeroImg from "../../assets/images/HomePage/indoor-shot-happy-young-woman.png";
 import TelephoneIcon from "../../assets/svg/contact-phone.svg";

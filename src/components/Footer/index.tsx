@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Link } from "react-router-dom";
 import { RiFacebookFill, RiTwitterFill, RiInstagramLine } from "react-icons/ri";
 import DentalistLogoBlack from "../../assets/svg/dentalist-black.svg";

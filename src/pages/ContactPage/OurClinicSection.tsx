@@ -1,5 +1,3 @@
-import React from "react";
-
 import clinicImg1 from "../../assets/images/ContactPage/clinic-img-1.png";
 import clinicImg2 from "../../assets/images/ContactPage/clinic-img-2.png";
 import mapImg from "../../assets/images/ContactPage/map-img.png";

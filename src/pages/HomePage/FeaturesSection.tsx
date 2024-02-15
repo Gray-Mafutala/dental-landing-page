@@ -1,5 +1,3 @@
-import React from "react";
-
 import SafetyFirstImg from "../../assets/images/HomePage/safety-first.svg";
 import InsuranveAcceptedImg from "../../assets/images/HomePage/insurance-accepted.svg";
 import FullServiceImg from "../../assets/images/HomePage/full-service-dentistry.svg";

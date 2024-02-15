@@ -1,5 +1,3 @@
-import React from "react";
-
 import StarGray from "../../assets/images/HomePage/star-gray.svg";
 import StarOrange from "../../assets/images/HomePage/star-orange.svg";
 

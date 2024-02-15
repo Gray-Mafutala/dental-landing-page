@@ -1,5 +1,3 @@
-import React from "react";
-
 import VioletButton from "../../components/UI/VioletButton";
 import DentalSurgeryImg from "../../assets/images/HomePage/patient-receiving-dental-treatment-1.png";
 
