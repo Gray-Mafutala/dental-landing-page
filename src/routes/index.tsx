@@ -1,5 +1,4 @@
 import React from "react";
-
 import { useRoutes } from "react-router-dom";
 
 const HomePage = React.lazy(() => import("../pages/HomePage"));
@@ -13,13 +12,21 @@ const PageNotFound = React.lazy(() => import("../pages/PageNotFound"));
 const Routing = () => {
   const routes = useRoutes([
     { path: "/", element: <HomePage /> },
+    { path: "/dental-landing-page", element: <HomePage /> },
+
     { path: "/about", element: <AboutPage /> },
     { path: "/services", element: <ServicesPage /> },
+
     {
       path: "/blog",
       element: <BlogPage />,
     },
-    { path: "/blog/new-tech", element: <BlogPost /> },
+
+    {
+      path: "/blog/:id",
+      element: <BlogPost />,
+    },
+
     { path: "/contact", element: <ContactPage /> },
     { path: "/*", element: <PageNotFound /> },
   ]);

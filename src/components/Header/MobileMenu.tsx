@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 import { CgClose } from "react-icons/cg";
 import NavLinkItems from "./NavLinkItems";

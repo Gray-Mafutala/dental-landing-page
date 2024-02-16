@@ -30,7 +30,10 @@ const ServicesSection = () => {
   return (
     <section className="max-w-[1200px] mx-auto w-full flex flex-col">
       {/* title, paragraph */}
-      <div className="flex justify-between items-center">
+      <div
+        className="flex flex-col items-center text-center laptop:flex-row
+        laptop:justify-between laptop:text-left gap-x-8 gap-y-12"
+      >
         <div className="flex flex-col gap-y-4">
           <span className="section-small-title">Services</span>
           <h2 className="max-w-[428px]">Feel amazing about your oral health</h2>
@@ -44,14 +47,15 @@ const ServicesSection = () => {
 
       {/* list of services */}
       <div
-        className="mt-16 mb-10 grid grid-cols-1 content-center 
-        mobileXL:grid-cols-2 laptop:grid-cols-4 gap-10"
+        className="mt-16 mb-10 grid grid-cols-1
+        mobileXL:grid-cols-2 laptop:grid-cols-4 gap-10
+        justify-items-center laptop:justify-items-stretch"
       >
         {services.map(({ img, service, color }) => (
           <div
             key={service}
-            className="max-w-[290px] rounded-[32px] border border-[#eee]
-            flex flex-col gap-y-6 p-4 pb-8 shadow-sm"
+            className="max-w-[480px] rounded-[32px] border border-[#eee]
+            flex flex-col gap-y-6 p-3 pb-6 mobileM:p-4 mobileM:pb-8 shadow-sm"
           >
             <div
               className={`${color} rounded-[32px] px-20 py-12 flex items-center justify-center`}

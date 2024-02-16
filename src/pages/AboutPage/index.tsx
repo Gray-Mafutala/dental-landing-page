@@ -6,7 +6,7 @@ import FaqSection from "./FaqSection";
 
 const About = () => {
   return (
-    <>
+      <>
       <HeroSection />
       <OurPrioritySection />
       <SafetySection />

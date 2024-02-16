@@ -28,7 +28,10 @@ const Testimonials = () => {
       flex flex-col items-center gap-y-14"
     >
       {/* title, paragraph */}
-      <div className="flex justify-between items-center">
+      <div
+        className="flex flex-col items-center text-center laptop:flex-row
+        laptop:justify-between laptop:text-left gap-x-8 gap-y-12"
+      >
         <div className="flex flex-col gap-y-4">
           <span className="section-small-title">Testimonials</span>
           <h2 className="max-w-md">What people have said about us</h2>
@@ -42,13 +45,13 @@ const Testimonials = () => {
 
       {/* testimonials */}
       <div
-        className="flex flex-col items-center justify-center gap-10
-        tablet:flex-row mt-10"
+        className="flex flex-col gap-y-20 items-center justify-center gap-x-5 laptopM:gap-x-10
+        laptop:flex-row mt-10"
       >
         {testimonials.map(({ avatar, fullName, starCount }, index) => (
           <div
             key={index}
-            className="flex flex-col items-center rounded-[2rem]
+            className="min-w-60 max-w-[480px] flex flex-col items-center rounded-[2rem]
             pb-8 px-6 gap-y-6 bg-white shadow-sm"
           >
             <img

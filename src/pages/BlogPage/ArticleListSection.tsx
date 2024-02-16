@@ -58,7 +58,6 @@ const ArticleListSection = () => {
             cover={cover}
             title={title}
             category={category}
-            link="/blog/new-tech"
             abstract="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing..."
           />
         ))}

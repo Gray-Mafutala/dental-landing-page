@@ -33,7 +33,7 @@ const FeaturesSection = () => {
       flex flex-col items-center gap-y-14"
     >
       {/* top content */}
-      <div className="flex flex-col">
+      <div className="flex flex-col text-center mobileXL:text-left">
         <span className="section-small-title">Features</span>
         <h2 className="mt-4 mb-6">Specialized care through experience</h2>
         <p className="max-w-[848px] text-violet-dark/70">
@@ -43,14 +43,18 @@ const FeaturesSection = () => {
       </div>
 
       {/* bottom content */}
-      <div className="grid grid-cols-2 gap-12">
+      <div className="grid grid-cols-1 tabletL:grid-cols-2 gap-12">
         {features.map(({ img, title, desc }) => (
-          <div key={title} className="flex items-center gap-x-6">
+          <div
+            key={title}
+            className="flex flex-col items-center text-center gap-6
+            mobileXL:flex-row mobileXL:text-left"
+          >
             <img src={img} alt={title} className="w-24 h-auto object-cover" />
 
             <div className="flex flex-col gap-y-2">
               <h3>{title}</h3>
-              <p className="w-72 text-violet-dark/60">{desc}</p>
+              <p className="tabletL:max-w-72 text-violet-dark/60">{desc}</p>
             </div>
           </div>
         ))}

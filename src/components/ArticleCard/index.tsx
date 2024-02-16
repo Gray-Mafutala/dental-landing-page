@@ -5,7 +5,7 @@ type ArticleCardProps = {
   cover: string;
   category: string;
   abstract: string;
-  link: string;
+  link?: string;
 };
 
 const ArticleCard = ({
@@ -13,7 +13,7 @@ const ArticleCard = ({
   cover,
   category,
   abstract,
-  link,
+  link="/blog/new-tech",
 }: ArticleCardProps) => {
   return (
     <Link
@@ -23,7 +23,7 @@ const ArticleCard = ({
       p-4 pb-10 hover:scale-105 hover:shadow-sm duration-300"
     >
       {/* cover and date */}
-      <div className="w-[368px] h-[250px] mb-6 relative">
+      <div className="max-w-[480px] max-h-[250px] mb-6 relative">
         <div className="absolute top-4 left-4 pt-1 pb-2 px-5 bg-white rounded-2xl flex flex-col items-center text-center">
           <span className="text-lg font-bold text-violet-dark">23</span>
           <span className="text-sm font-bold text-violet-dark/60">Jan</span>
@@ -31,7 +31,7 @@ const ArticleCard = ({
         <img
           src={cover}
           alt={title}
-          className="w-full h-full object-cover rounded-[2rem]"
+          className="min-w-48 min-h-32 w-full h-full object-cover rounded-[2rem]"
         />
       </div>
 

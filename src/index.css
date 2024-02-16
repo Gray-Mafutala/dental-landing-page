@@ -11,11 +11,11 @@
     }
 
     h1 {
-        @apply text-violet-dark font-bricolage-grotesque text-[4rem] leading-[1.2] -tracking-[2.56px] font-bold;
+        @apply text-violet-dark font-bricolage-grotesque text-4xl mobileM:text-5xl mobileM:text-[3.5rem] laptopM:text-[4rem] leading-[1.2] -tracking-[2.56px] font-bold;
     }
 
     h2 {
-        @apply text-violet-dark font-bricolage-grotesque text-5xl -tracking-[1.92px] font-bold;
+        @apply text-violet-dark font-bricolage-grotesque text-[2rem] mobileM:text-[2.5rem] leading-[1.12] laptopM:text-5xl -tracking-[1.92px] font-bold;
     }
 
     h3 {

@@ -48,7 +48,7 @@ const FormBookAppointment = ({
         {/* form elements to enter text */}
         <div>
           {/* name, email, services and department */}
-          <div className="grid grid-cols-2 gap-x-10 gap-y-8">
+          <div className="grid grid-cols-1 mobileL:grid-cols-2 gap-x-10 gap-y-8">
             <InputForm
               id="form-book-appointment-name"
               name="name"
@@ -123,7 +123,10 @@ const FormBookAppointment = ({
         </div>
 
         {/* contact and btn to book appointment (submit) */}
-        <div className="flex justify-between gap-8">
+        <div
+          className="flex flex-col items-center mobileL:flex-row justify-between
+          gap-8 flex-wrap tabletL:justify-between"
+        >
           {/* contact */}
           <div className="flex items-center gap-x-4">
             <img src={phoneViolet} alt="" className="max-w-[64px]" />
@@ -135,8 +138,8 @@ const FormBookAppointment = ({
 
           {/* btn to bokk appointment */}
           <VioletButton
-            type="sumbit"
-            addStyles="rounded-2xl after:rounded-2xl px-10 py-5 self-start"
+            type="submit"
+            addStyles="rounded-2xl after:rounded-2xl px-6 py-4 mobileXL:px-10 mobileXL:py-5 mobileL:self-start"
             onClick={() => sendBookAppointmentData(appointmentData)}
           >
             Book an appointment

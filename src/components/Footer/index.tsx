@@ -83,7 +83,7 @@ const Footer = () => {
             <li className="uppercase text-white/70">Contact & Information</li>
 
             <li
-              className="flex items-end tablet:items-center gap-x-6 justify-center 
+              className="flex items-end gap-x-6 justify-center 
               tablet:justify-start"
             >
               <img
@@ -100,7 +100,7 @@ const Footer = () => {
             </li>
 
             <li
-              className="flex items-end tablet:items-center gap-x-6 justify-center 
+              className="flex items-end gap-x-6 justify-center 
               tablet:justify-start"
             >
               <img
@@ -117,7 +117,7 @@ const Footer = () => {
             </li>
 
             <li
-              className="flex items-end tablet:items-center gap-x-6 justify-center 
+              className="flex items-end gap-x-6 justify-center 
               tablet:justify-start"
             >
               <img

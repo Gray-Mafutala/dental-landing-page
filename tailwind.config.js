@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-3-vectors": "url('./src/assets/images/HomePage/3-vectors.svg')",
+        "hero-3-vectors": "url('/src/assets/images/HomePage/3-vectors.svg')",
       },
     },
 
@@ -34,6 +34,7 @@ export default {
       mobileL: "580px",
       mobileXL: "640px",
       tablet: "768px",
+      tabletL: "962px",
       laptop: "1024px",
       laptopM: "1280px",
     },

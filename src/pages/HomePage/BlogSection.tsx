@@ -34,13 +34,12 @@ const BlogSection = () => {
 
       {/* some articles */}
       <div
-        className="flex flex-col items-center justify-center gap-10
-        tablet:flex-row"
+        className="flex flex-col items-stretch justify-center gap-10
+        tabletL:flex-row"
       >
         {articleList.map(({ cover, category, title }) => (
           <ArticleCard
             key={title}
-            link="/blog/new-tech"
             cover={cover}
             title={title}
             category={category}

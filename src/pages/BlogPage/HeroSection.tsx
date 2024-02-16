@@ -1,5 +1,3 @@
-import React from 'react'
-
 import SearchBar from "../../components/UI/SearchBar";
 import newsAndArticleImg from "../../assets/images/BlogPage/news-and-article-img.png";
 

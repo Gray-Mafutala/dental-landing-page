@@ -38,7 +38,6 @@ const ArticleListSection = () => {
         {articleList.map(({ cover, category, title }) => (
           <ArticleCard
             key={title}
-            link="/blog/new-tech"
             cover={cover}
             title={title}
             category={category}
