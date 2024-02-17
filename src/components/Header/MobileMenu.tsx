@@ -22,11 +22,11 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
         isOpen
           ? `fixed w-full h-full pt-16 flex flex-col gap-y-6 items-center font-bold 
           text-lg mobileXL:text-xl laptop:text-2xl gap-x-6 bg-violet-light/50 
-          text-violet-dark backdrop-blur-md laptopM:hidden z-10
+          text-violet-dark backdrop-blur-md laptopM:hidden z-50
           transition-transform duration-500`
           : `fixed w-full h-full pt-16 flex flex-col gap-y-6 items-center font-bold 
           text-lg mobileXL:text-xl laptop:text-2xl gap-x-6 bg-violet-light/50 
-          text-violet-dark backdrop-blur-md laptopM:hidden z-10
+          text-violet-dark backdrop-blur-md laptopM:hidden z-50
           transition-transform duration-500 translate-x-[100%]`
       }
     >
@@ -48,7 +48,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
         link="/contact"
         onClick={onClose}
         addStyles="mt-4 text-sm laptop:text-base px-6 py-4 rounded-xl 
-        after:rounded-xl mr-5"
+        after:rounded-xl"
       >
         Book an appointment
       </VioletButton>

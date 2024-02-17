@@ -18,7 +18,10 @@ const GallerySection = () => {
   return (
     <section className="max-w-[1200px] mx-auto w-full flex flex-col gap-y-16">
       {/* title, paragraph */}
-      <div className="flex justify-between items-center">
+      <div
+        className="flex flex-col items-center text-center laptop:flex-row
+        laptop:justify-between laptop:text-left gap-x-8 gap-y-12"
+      >
         <div className="flex flex-col gap-y-4">
           <span className="section-small-title">Gallery</span>
           <h2 className="max-w-[475px]">
@@ -33,16 +36,24 @@ const GallerySection = () => {
       </div>
 
       {/* Gallery photos */}
-      <div className="grid grid-cols-4 gap-10">
+      <div className="grid gap-10 gallery-grid">
         {gallery.map(({ photo, key }) => (
           <img
             key={key}
             src={photo}
             alt=""
             className={
-              key === "photo1" || key === "photo6"
-                ? "col-span-2 w-full h-[300px] object-cover rounded-[2rem]"
-                : " w-full h-[300px] object-cover rounded-[2rem]"
+              key === "photo1"
+                ? "gallery-photo gallery-photo-1"
+                : key === "photo2"
+                ? "gallery-photo gallery-photo-2"
+                : key === "photo3"
+                ? "gallery-photo gallery-photo-3"
+                : key === "photo4"
+                ? "gallery-photo gallery-photo-4"
+                : key === "photo5"
+                ? "gallery-photo gallery-photo-5"
+                : "gallery-photo gallery-photo-6"
             }
           />
         ))}

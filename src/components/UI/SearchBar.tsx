@@ -1,9 +1,13 @@
-const SearchBar = () => {
+type SearchBarProps = {
+  addStyles?: string;
+};
+
+const SearchBar = ({ addStyles = "" }: SearchBarProps) => {
   return (
     <div
-      className="flex justify-between gap-x-5 bg-white border border-[#eee]
-      rounded-2xl max-w-[440px] h-[60px] py-2 pl-4 pr-2
-      focus-within:shadow-[0_0_0_2px_#583fbc] duration-300"
+      className={`${addStyles} flex justify-between gap-x-5 bg-white
+      border border-[#eee] rounded-2xl max-w-[440px] h-[60px] py-2 pl-4 pr-2
+      focus-within:shadow-[0_0_0_2px_#583fbc] duration-300`}
     >
       <input
         type="search"

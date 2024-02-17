@@ -136,7 +136,7 @@ const FormBookAppointment = ({
             </div>
           </div>
 
-          {/* btn to bokk appointment */}
+          {/* btn to book an appointment */}
           <VioletButton
             type="submit"
             addStyles="rounded-2xl after:rounded-2xl px-6 py-4 mobileXL:px-10 mobileXL:py-5 mobileL:self-start"

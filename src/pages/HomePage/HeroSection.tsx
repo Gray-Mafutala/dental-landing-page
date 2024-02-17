@@ -7,7 +7,7 @@ import drSamanthaImg from "../../assets/images/HomePage/dr-samantha.png";
 const HeroSection = () => {
   return (
     <section
-      className="px-5 bg-sky-light bg-hero-3-vectors bg-no-repeat bg-[center_2rem]
+      className="px-5 mobileM:px-6 bg-sky-light bg-hero-3-vectors bg-no-repeat bg-[center_2rem]
       rounded-[48px] flex flex-col justify-center items-center gap-x-10 pt-8
       tabletL:flex-row gap-y-5"
     >

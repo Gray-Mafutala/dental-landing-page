@@ -49,14 +49,18 @@ const SymptomsSection = () => {
       </div>
 
       {/* bottom content */}
-      <div className="grid grid-cols-2 gap-12">
+      <div className="grid grid-cols-1 tabletL:grid-cols-2 gap-12">
         {symptoms.map(({ img, title, desc }) => (
-          <div key={title} className="flex items-center gap-x-6">
+          <div
+            key={title}
+            className="flex flex-col items-center text-center gap-6
+            mobileXL:flex-row mobileXL:text-left"
+          >
             <img src={img} alt={title} className="w-24 h-auto object-cover" />
 
             <div className="flex flex-col gap-y-2">
               <h3>{title}</h3>
-              <p className="w-72 text-violet-dark/60">{desc}</p>
+              <p className="tabletL:w-72 text-violet-dark/60">{desc}</p>
             </div>
           </div>
         ))}

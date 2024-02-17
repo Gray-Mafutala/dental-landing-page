@@ -64,34 +64,34 @@ const ArticleListSection = () => {
       </div>
 
       {/* pagination buttons */}
-      <div className="flex gap-x-4">
-        <button className="text-lg w-14 h-14 font-bold text-white rounded-2xl bg-violet">
+      <div className="flex items-center justify-center gap-x-4 gap-y-6 flex-wrap">
+        <button className="text-lg w-12 aspect-square tablet:w-14 font-bold text-white rounded-2xl bg-violet">
           1
         </button>
 
-        <button className="text-lg w-14 h-14 font-bold text-violet-dark rounded-2xl border border-[#eee] hover:text-white hover:bg-violet hover: hover:border-violet duration-300">
+        <button className="text-lg w-12 aspect-square tablet:w-14 font-bold text-violet-dark rounded-2xl border border-[#eee] hover:text-white hover:bg-violet hover: hover:border-violet duration-300">
           2
         </button>
 
-        <button className="text-lg w-14 h-14 font-bold text-violet-dark rounded-2xl border border-[#eee] hover:text-white hover:bg-violet hover: hover:border-violet duration-300">
+        <button className="text-lg w-12 aspect-square tablet:w-14 font-bold text-violet-dark rounded-2xl border border-[#eee] hover:text-white hover:bg-violet hover: hover:border-violet duration-300">
           3
         </button>
 
-        <button className="text-lg w-14 h-14 font-bold text-violet-dark rounded-2xl border border-[#eee] hover:text-white hover:bg-violet hover: hover:border-violet duration-300">
+        <button className="text-lg w-12 aspect-square tablet:w-14 font-bold text-violet-dark rounded-2xl border border-[#eee] hover:text-white hover:bg-violet hover: hover:border-violet duration-300">
           4
         </button>
 
-        <button className="text-lg w-14 h-14 font-bold text-violet-dark rounded-2xl border border-[#eee] hover:text-white hover:bg-violet hover: hover:border-violet duration-300">
+        <button className="text-lg w-12 aspect-square tablet:w-14 font-bold text-violet-dark rounded-2xl border border-[#eee] hover:text-white hover:bg-violet hover: hover:border-violet duration-300">
           5
         </button>
 
-        <button className="text-lg w-14 h-14 font-bold text-violet-dark rounded-2xl border border-[#eee] hover:text-white hover:bg-violet hover: hover:border-violet duration-300">
+        <button className="text-lg w-12 aspect-square tablet:w-14 font-bold text-violet-dark rounded-2xl border border-[#eee] hover:text-white hover:bg-violet hover: hover:border-violet duration-300">
           ...
         </button>
 
         <button
-          className="text-lg w-14 h-14 font-bold text-violet-dark rounded-2xl border border-[#eee] hover:text-white hover:bg-violet hover: hover:border-violet duration-300
-          flex justify-center items-center"
+          className="text-lg w-12 aspect-square tablet:w-14 font-bold text-violet-dark rounded-2xl border border-[#eee] hover:text-white hover:bg-violet hover: hover:border-violet duration-300
+          flex items-center justify-center"
         >
           <svg className="w-2 h-[14px] fill-none">
             <path

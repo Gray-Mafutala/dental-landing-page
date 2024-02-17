@@ -22,3 +22,5 @@
   ![contact-form](/readme-img/contact-form.PNG)
 
   ![footer](/readme-img/footer.PNG)
+
+  ![footer](/readme-img/mobile-preview.PNG)

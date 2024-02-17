@@ -7,11 +7,13 @@ const addresses = [
     imgClinic: clinicImg1,
     nameClinic: "Dentalist Main Clinic",
     address: "35 West Dental Street California 1004",
+    key: "a1",
   },
   {
     imgClinic: clinicImg2,
     nameClinic: "Dentalist Main Clinic",
     address: "35 West Dental Street California 1004",
+    key: "b2",
   },
 ];
 
@@ -25,26 +27,32 @@ const OurClinicSection = () => {
       </h2>
 
       {/* bottom content */}
-      <div className="flex justify-center gap-x-10">
+      <div className="flex flex-wrap justify-center gap-10">
         {/* address card */}
-        {addresses.map(({ imgClinic, nameClinic, address }) => (
+        {addresses.map(({ imgClinic, nameClinic, address, key }) => (
           <div
+            key={key}
             className="flex flex-col items-center p-4 pb-6 rounded-[2rem] 
             border border-[#eee] gap-y-6"
           >
             {/* image and map */}
-            <div className="flex  gap-x-4 justify-center max-h-[250px]">
-              <img
-                src={imgClinic}
-                alt={`Clinic - ${address}`}
-                className="h-full rounded-l-[2rem] w-64"
-              />
+            <div className="flex gap-x-4 justify-center max-h-[250px]">
+              <div className="max-w-64">
+                <img
+                  src={imgClinic}
+                  alt={`Clinic - ${address}`}
+                  className="min-w-[160px] w-full h-full rounded-l-[2rem]"
+                />
+              </div>
+
               {/* put maps here */}
-              <img
-                src={mapImg}
-                alt=""
-                className="h-full rounded-r-[2rem] w-36"
-              />
+              <div className="max-w-36">
+                <img
+                  src={mapImg}
+                  alt=""
+                  className="min-w-[80px] w-full h-full rounded-r-[2rem]"
+                />
+              </div>
             </div>
 
             {/* address */}

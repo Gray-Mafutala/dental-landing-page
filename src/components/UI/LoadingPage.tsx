@@ -8,7 +8,7 @@ const LoadingPage = () => {
           r="15"
           fill="#583FBC"
           stroke="#583FBC"
-          stroke-width="15"
+          strokeWidth="15"
         >
           <animate
             attributeName="cx"
@@ -26,7 +26,7 @@ const LoadingPage = () => {
           r="15"
           fill="#583FBC"
           stroke="#583FBC"
-          stroke-width="15"
+          strokeWidth="15"
           opacity=".8"
         >
           <animate
@@ -45,7 +45,7 @@ const LoadingPage = () => {
           r="15"
           fill="#583FBC"
           stroke="#583FBC"
-          stroke-width="15"
+          strokeWidth="15"
           opacity=".6"
         >
           <animate
@@ -64,7 +64,7 @@ const LoadingPage = () => {
           r="15"
           fill="#583FBC"
           stroke="#583FBC"
-          stroke-width="15"
+          strokeWidth="15"
           opacity=".4"
         >
           <animate
@@ -83,7 +83,7 @@ const LoadingPage = () => {
           r="15"
           fill="#583FBC"
           stroke="#583FBC"
-          stroke-width="15"
+          strokeWidth="15"
           opacity=".2"
         >
           <animate

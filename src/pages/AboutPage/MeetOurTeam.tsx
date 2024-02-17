@@ -17,7 +17,10 @@ const MeetOurTeam = () => {
   return (
     <section className="max-w-[1200px] mx-auto w-full flex flex-col gap-y-16">
       {/* title, paragraph */}
-      <div className="flex justify-between items-center">
+      <div
+        className="flex flex-col items-center text-center laptop:flex-row
+        laptop:justify-between laptop:text-left gap-x-8 gap-y-12"
+      >
         <div className="flex flex-col gap-y-4">
           <span className="section-small-title">Meet our team</span>
           <h2 className="max-w-[540px]">

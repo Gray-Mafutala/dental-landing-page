@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { Link } from "react-router-dom";
 import { CgMenuRight } from "react-icons/cg";
@@ -12,13 +12,34 @@ const Header = () => {
   const openMobileMenu = () => setMobileMenu(true);
   const closeMobileMenu = () => setMobileMenu(false);
 
+  // to add shadow on Header on scroll
+  const headerRef = useRef(null);
+  const [showShadow, setShowShadow] = useState(false);
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      //setShowShadow(entry.boundingClientRect.top < -100);
+      setShowShadow(entry.isIntersecting);
+      console.log(entry.boundingClientRect.top);
+    });
+    headerRef.current && observer.observe(headerRef.current);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
       {/* MobileMenu */}
       <MobileMenu isOpen={mobileMenu} onClose={closeMobileMenu} />
 
       {/* Header itself */}
-      <header className="pt-6 pb-8 px-5">
+      <header
+        ref={headerRef}
+        className={
+          showShadow
+            ? `sticky top-0 bg-white/80 backdrop-blur-md z-30 pt-6 pb-8 px-5 shadow-m`
+            : `sticky top-0 bg-white/80 backdrop-blur-md z-30 pt-6 pb-8 px-5
+              `
+        }
+      >
         <nav
           className="max-w-screen-laptopM w-full mx-auto min-h-12 flex
           items-center justify-between gap-x-6 whitespace-nowrap"

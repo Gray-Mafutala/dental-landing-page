@@ -5,9 +5,9 @@ import articleImg2 from "../../assets/images/BlogPost/article-img-2.png";
 
 const ArticleContent = () => {
   return (
-    <section className="max-w-[1200px] mx-auto flex flex-col mt-12">
+    <section className="max-w-[1200px] mx-auto flex flex-col">
       {/* title, author and abstract */}
-      <div className="pl-20 mb-16">
+      <div className="tablet:pl-20 mb-16">
         {/* title */}
         <span className="section-small-title">Technology</span>
         <h2 className="max-w-[710px] mt-4 mb-8 leading-[1.3]">
@@ -44,11 +44,11 @@ const ArticleContent = () => {
       <img
         src={articleCoverImg}
         alt="New Technology Make for Better Dental Operation"
-        className="w-full h-[600px] object-cover rounded-3xl"
+        className="w-full h-[320px] mobileXL:h-[480px] tabletL:h-[520px] laptop:h-[600px] object-cover rounded-3xl"
       />
 
       {/* 2 firsts content paragraphs */}
-      <div className="pl-20 mt-16 flex flex-col gap-y-6">
+      <div className="tablet:pl-20 mt-16 flex flex-col gap-y-6">
         <p className="text-base max-w-[990px]">
           The paper discusses the use of epoxy resins in construction and repair
           of offshore concrete structures. Typical properties of resin systems
@@ -77,7 +77,7 @@ const ArticleContent = () => {
       </div>
 
       {/* title and 2 others paragraphs */}
-      <div className="pl-20 mt-16 flex flex-col">
+      <div className="tablet:pl-20 mt-16 flex flex-col">
         <h3 className="text-4xl">
           How technology affecting the dental surgery?
         </h3>
@@ -103,22 +103,30 @@ const ArticleContent = () => {
       </div>
 
       {/* 2 images */}
-      <div className="pl-20 mt-12 flex gap-x-10">
-        <img
-          src={articleImg1}
-          alt=""
-          className="w-[510px] h-[300px] rounded-2xl object-cover"
-        />
-        <img
-          src={articleImg2}
-          alt=""
-          className="w[400px] h-[300px] rounded-2xl object-cover"
-        />
+      <div
+        className="tablet:pl-20 mt-12 flex flex-col items-center gap-y-10
+        mobileXL:flex-row gap-x-10"
+      >
+        <div className="w-full mobileXL:max-w-[510px]">
+          <img
+            src={articleImg1}
+            alt=""
+            className="min-w-[280px] w-full h-[220px] mobileXL:h-[260px] tabletL:h-[300px] rounded-2xl object-cover"
+          />
+        </div>
+
+        <div className="w-full mobileXL:max-w-[400px] -order-1 mobileXL:order-1">
+          <img
+            src={articleImg2}
+            alt=""
+            className="min-w-[190px] w-full h-[220px] mobileXL:h-[260px] tabletL:h-[300px] rounded-2xl object-cover"
+          />
+        </div>
       </div>
 
       {/* citation paragraph */}
       <p
-        className="mt-16 px-10 py-12 w-[880px] mx-auto bg-gradient-to-r 
+        className="mt-16 tablet:ml-20 p-6 mobileL:px-10 mobileL:py-12 max-w-[880px] mx-auto bg-gradient-to-r 
         from-[#dbeffa] border-l-[3px] border-l-violet"
       >
         “ Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
@@ -128,7 +136,7 @@ const ArticleContent = () => {
       </p>
 
       {/* remaining paragraphs */}
-      <div className="pl-20 mt-16 flex flex-col gap-y-8">
+      <div className="tablet:pl-20 mt-16 flex flex-col gap-y-8">
         <p className="text-base max-w-[990px]">
           A few years ago, Bloomberg Businessweek published a feature story on
           Stripe. Four words spanned the center of the cover: “seven lines of
@@ -137,7 +145,7 @@ const ArticleContent = () => {
         </p>
 
         <p className="text-lg font-bold">
-          <span className="text-violet-dark">Related resource :</span> {" "}
+          <span className="text-violet-dark">Related resource :</span>{" "}
           <span className="text-violet">
             What is canal root and what causing it?
           </span>

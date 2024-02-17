@@ -20,11 +20,10 @@ const FaqAccordion = ({ question, answer }: FaqAccordionProps) => {
       {/* question */}
       <div
         onClick={toogleFaqAccordion}
-        className="flex justify-between py-6 px-6 cursor-pointer z-10"
+        className="flex justify-between gap-x-5 p-4 mobileXL:p-6 cursor-pointer z-10"
       >
         <h4
-          className="text-[#121f3e] text-2xl font-bold whitespace-nowrap
-          text-ellipsis"
+          className="text-[#121f3e] text-xl tabletL:text-2xl font-bold text-ellipsis"
         >
           {question}
         </h4>
@@ -32,8 +31,8 @@ const FaqAccordion = ({ question, answer }: FaqAccordionProps) => {
         <svg
           className={
             isActive
-              ? "w-8 h-8 fill-none -rotate-180 duration-500 ease-out"
-              : "w-8 h-8 fill-none duration-500 ease-out"
+              ? "min-w-8 w-8 min-h-8 h-8 fill-none -rotate-180 duration-500 ease-out"
+              : "min-w-8 w-8 min-h-8 h-8 fill-none duration-500 ease-out"
           }
         >
           <path
@@ -53,11 +52,11 @@ const FaqAccordion = ({ question, answer }: FaqAccordionProps) => {
       <div
         className={
           isActive
-            ? "max-h-16 duration-300 ease-out"
+            ? "max-h-auto duration-300 ease-out"
             : "max-h-0 overflow-hidden duration-300 ease-out"
         }
       >
-        <p className="text-[#96a0b5] text-2xl font-normal px-6">{answer}</p>
+        <p className="text-[#96a0b5] text-xl tabletL:text-2xl font-normal px-6">{answer}</p>
       </div>
     </div>
   );
