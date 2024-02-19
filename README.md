@@ -9,8 +9,6 @@
 ### Overview after integration
   ![home-page-hero-section](/readme-img/home-page-hero-section.PNG)
 
-  ![mobile-preview](/readme-img/mobile-preview.png)
-
   ![home-page-features-section](/readme-img/home-page-features-section.PNG)
 
   ![home-page-testimonials](/readme-img/home-page-testimonials.PNG)
