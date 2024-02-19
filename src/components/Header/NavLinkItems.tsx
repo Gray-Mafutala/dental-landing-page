@@ -4,48 +4,28 @@ type NavLinkItemsProps = {
   hideMobileMenu?: () => void;
 };
 
+const navItemsList = [
+  { link: "/dental-landing-page/about", name: "About Us" },
+  { link: "/dental-landing-page/blog", name: "New Patient" },
+  { link: "/dental-landing-page/services", name: "Our Services" },
+  { link: "/dental-landing-page/contact", name: "Contact Us" },
+];
+
 const NavLinkItems = ({ hideMobileMenu }: NavLinkItemsProps) => {
   return (
     <>
-      <NavLink
-        to="/about"
-        onClick={hideMobileMenu}
-        className={({ isActive }) =>
-          isActive ? "nav-link-active" : "nav-link"
-        }
-      >
-        About Us
-      </NavLink>
-
-      <NavLink
-        to="/blog"
-        onClick={hideMobileMenu}
-        className={({ isActive }) =>
-          isActive ? "nav-link-active" : "nav-link"
-        }
-      >
-        New Patient
-      </NavLink>
-
-      <NavLink
-        to="/services"
-        onClick={hideMobileMenu}
-        className={({ isActive }) =>
-          isActive ? "nav-link-active" : "nav-link"
-        }
-      >
-        Our Services
-      </NavLink>
-
-      <NavLink
-        to="/contact"
-        onClick={hideMobileMenu}
-        className={({ isActive }) =>
-          isActive ? "nav-link-active" : "nav-link"
-        }
-      >
-        Contact Us
-      </NavLink>
+      {navItemsList.map(({ link, name }) => (
+        <NavLink
+          to={link}
+          key={name}
+          onClick={hideMobileMenu}
+          className={({ isActive }) =>
+            isActive ? "nav-link-active" : "nav-link"
+          }
+        >
+          {name}
+        </NavLink>
+      ))}
     </>
   );
 };

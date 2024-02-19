@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 
-import InputForm from "../UI/InputForm";
-import SelectForm from "../UI/SelectForm";
-import VioletButton from "../UI/VioletButton";
-import phoneViolet from "../../assets/images/HomePage/contact-phone-violet.svg";
+import InputForm from "../Form/InputForm";
+import SelectForm from "../Form/SelectForm";
+import VioletButton from "../ui/VioletButton";
+import PhoneVioletIcon from "../../assets/images/HomePage/contact-phone-violet.svg";
 
 type BookAppointmentData = {
   name: string;
   email: string;
+  service: string;
   department: string;
   message: string;
 };
@@ -19,7 +20,7 @@ type FormBookAppointmentProps = {
 const FormBookAppointment = ({
   addStylesToForm = "",
 }: FormBookAppointmentProps) => {
-  const [appointmentData, setAppointmentData] = useState({
+  const [appointmentData, setAppointmentData] = useState<BookAppointmentData>({
     name: "",
     email: "",
     service: "",
@@ -37,14 +38,17 @@ const FormBookAppointment = ({
     setAppointmentData({ ...appointmentData, [field]: value });
   };
 
-  const sendBookAppointmentData = (data: BookAppointmentData) => {
+  const handleSubmit = () => {
     // processing here...
-    console.log(data);
+    console.log(JSON.stringify(appointmentData));
   };
 
   return (
     <>
-      <form className={`flex flex-col gap-y-10 ${addStylesToForm}`}>
+      <form
+        onSubmit={(e) => e.preventDefault()}
+        className={`flex flex-col gap-y-10 ${addStylesToForm}`}
+      >
         {/* form elements to enter text */}
         <div>
           {/* name, email, services and department */}
@@ -113,11 +117,12 @@ const FormBookAppointment = ({
               maxLength={1000}
               placeholder="Enter your message..."
               value={appointmentData.message}
+              required
               onChange={handleChange}
               className="min-h-48 text-base font-medium px-4 py-3 rounded-2xl
               border border-[#eee] text-violet-dark outline-none resize-none
               focus:shadow-[0_0_0_2px_#583fbc] focus:border-transparent 
-              duration-200"
+              placeholder-primary duration-200"
             ></textarea>
           </div>
         </div>
@@ -129,7 +134,7 @@ const FormBookAppointment = ({
         >
           {/* contact */}
           <div className="flex items-center gap-x-4">
-            <img src={phoneViolet} alt="" className="max-w-[64px]" />
+            <img src={PhoneVioletIcon} alt="" className="max-w-[64px]" />
             <div className="flex flex-col whitespace-nowrap">
               <span className="section-small-title">Dental 24H Emergency</span>
               <span className="text-violet-dark font-bold">03 482 394 123</span>
@@ -138,9 +143,8 @@ const FormBookAppointment = ({
 
           {/* btn to book an appointment */}
           <VioletButton
-            type="submit"
+            onClick={handleSubmit}
             addStyles="rounded-2xl after:rounded-2xl px-6 py-4 mobileXL:px-10 mobileXL:py-5 mobileL:self-start"
-            onClick={() => sendBookAppointmentData(appointmentData)}
           >
             Book an appointment
           </VioletButton>

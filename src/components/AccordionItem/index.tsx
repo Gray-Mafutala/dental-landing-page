@@ -1,30 +1,28 @@
 import { useState } from "react";
 
-type FaqAccordionProps = {
+type AccordionItemProps = {
   question: string;
   answer: string;
 };
 
-const FaqAccordion = ({ question, answer }: FaqAccordionProps) => {
+const AccordionItem = ({ question, answer }: AccordionItemProps) => {
   const [isActive, setIsActive] = useState(false);
-  const toogleFaqAccordion = () => setIsActive((value) => !value);
+  const toggleOpening = () => setIsActive((value) => !value);
 
   return (
     <div
       className={
         isActive
-          ? "flex flex-col border-b border-b-[#96a0b5] !border-t-2 !border-t-violet pb-6 linear-transition active"
+          ? "flex flex-col border-b border-b-[#96a0b5] !border-t-2 !border-t-violet pb-3 linear-transition active"
           : "flex flex-col border-b border-b-[#96a0b5] linear-transition"
       }
     >
       {/* question */}
       <div
-        onClick={toogleFaqAccordion}
+        onClick={toggleOpening}
         className="flex justify-between gap-x-5 p-4 mobileXL:p-6 cursor-pointer z-10"
       >
-        <h4
-          className="text-[#121f3e] text-xl tabletL:text-2xl font-bold text-ellipsis"
-        >
+        <h4 className="text-[#121f3e] text-xl tabletL:text-2xl font-bold text-ellipsis">
           {question}
         </h4>
 
@@ -56,10 +54,12 @@ const FaqAccordion = ({ question, answer }: FaqAccordionProps) => {
             : "max-h-0 overflow-hidden duration-300 ease-out"
         }
       >
-        <p className="text-[#96a0b5] text-xl tabletL:text-2xl font-normal px-6">{answer}</p>
+        <p className="text-[#96a0b5] text-xl tabletL:text-2xl font-normal px-6">
+          {answer}
+        </p>
       </div>
     </div>
   );
 };
 
-export default FaqAccordion;
+export default AccordionItem;

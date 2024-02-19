@@ -1,3 +1,4 @@
+import SectionHeaderAndParagraph from "../../components/SectionHeaderAndParagraph";
 import DenturesIcon from "../../assets/images/HomePage/dentures.svg";
 import ImplantsIcon from "../../assets/images/HomePage/implants.svg";
 import WhiteningIcon from "../../assets/images/HomePage/whitening.svg";
@@ -28,26 +29,18 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section className="max-w-[1200px] mx-auto w-full flex flex-col">
+    <section className="section-1200 flex-col">
       {/* title, paragraph */}
-      <div
-        className="flex flex-col items-center text-center laptop:flex-row
-        laptop:justify-between laptop:text-left gap-x-8 gap-y-12"
-      >
-        <div className="flex flex-col gap-y-4">
-          <span className="section-small-title">Services</span>
-          <h2 className="max-w-[428px]">Feel amazing about your oral health</h2>
-        </div>
-
-        <p className="max-w-xl text-violet-dark/70">
-          Lorem ipsum is placeholder text commonly used in the graphic, print,
-          and publishing industries for previewing layouts and visual mockups.
-        </p>
-      </div>
+      <SectionHeaderAndParagraph
+        category="Services"
+        title="Feel amazing about your oral health"
+        titleStyles="max-w-[425px]"
+        paragraph="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
+      />
 
       {/* list of services */}
       <div
-        className="mt-16 mb-10 grid grid-cols-1
+        className="mt-16 mb-14 grid grid-cols-1
         mobileXL:grid-cols-2 laptop:grid-cols-4 gap-10
         justify-items-center laptop:justify-items-stretch"
       >
@@ -55,7 +48,8 @@ const ServicesSection = () => {
           <div
             key={service}
             className="max-w-[480px] rounded-[32px] border border-[#eee]
-            flex flex-col gap-y-6 p-3 pb-6 mobileM:p-4 mobileM:pb-8 shadow-sm"
+            flex flex-col gap-y-6 p-3 pb-6 mobileM:p-4 mobileM:pb-8
+            cursor-pointer hover:shadow-[] duration-300"
           >
             <div
               className={`${color} rounded-[32px] px-20 py-12 flex items-center justify-center`}

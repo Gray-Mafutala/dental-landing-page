@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 import { CgClose } from "react-icons/cg";
 import NavLinkItems from "./NavLinkItems";
-import VioletButton from "../UI/VioletButton";
+import VioletButton from "../ui/VioletButton";
 
 type MobileMenuProps = {
   isOpen: boolean;
@@ -42,10 +42,10 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
       {/* nav-links */}
       <NavLinkItems hideMobileMenu={onClose} />
 
-      {/*  btn to Book an appointment */}
+      {/* btn to Book an appointment */}
       <VioletButton
         isLink={true}
-        link="/contact"
+        link="/dental-landing-page#book-appointment"
         onClick={onClose}
         addStyles="mt-4 text-sm laptop:text-base px-6 py-4 rounded-xl 
         after:rounded-xl"

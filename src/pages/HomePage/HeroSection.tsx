@@ -1,8 +1,8 @@
-import VioletButton from "../../components/UI/VioletButton";
-import ContactDentalEmergency from "../../components/UI/ContactDentalEmergency";
+import VioletButton from "../../components/ui/VioletButton";
+import ContactDentalEmergency from "../../components/ContactDentalEmergency";
 
-import heroImg from "../../assets/images/HomePage/indoor-shot-happy-young-woman.png";
-import drSamanthaImg from "../../assets/images/HomePage/dr-samantha.png";
+import HeroImg from "../../assets/images/HomePage/indoor-shot-happy-young-woman.png";
+import DrSamanthaImg from "../../assets/images/HomePage/dr-samantha.png";
 
 const HeroSection = () => {
   return (
@@ -28,7 +28,11 @@ const HeroSection = () => {
           className="flex items-center justify-center gap-4
           flex-wrap-reverse tabletL:justify-between"
         >
-          <VioletButton addStyles="rounded-2xl after:rounded-2xl px-6 py-4 mobileM:px-10 mobileM:py-5 self-start">
+          <VioletButton
+            isLink={true}
+            link="/dental-landing-page#book-appointment"
+            addStyles="rounded-2xl after:rounded-2xl px-6 py-4 mobileM:px-10 mobileM:py-5 self-start"
+          >
             Book an appointment
           </VioletButton>
 
@@ -43,7 +47,7 @@ const HeroSection = () => {
       >
         {/* hero image */}
         <img
-          src={heroImg}
+          src={HeroImg}
           alt="Entrust your smile to professional"
           className="min-w-60 w-[full] h-auto mobileXL:h-full object-cover"
         />
@@ -58,18 +62,16 @@ const HeroSection = () => {
           mobileL:whitespace-nowrap"
         >
           <img
-            src={drSamanthaImg}
+            src={DrSamanthaImg}
             alt=""
-            className="w-[57px] h-[57px] object-contain"
+            className="w-[57px] h-[57px] object-none"
           />
 
           <p className="flex flex-col gap-y-1">
             <span className="text-sm font-bold text-violet-dark">
               Dr. Samantha Alice
             </span>
-            <span className="text-xs font-medium text-violet-dark/70">
-              Consultant
-            </span>
+            <span className="text-xs font-medium">Consultant</span>
           </p>
         </div>
       </div>

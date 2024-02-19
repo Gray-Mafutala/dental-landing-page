@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { RiFacebookFill, RiTwitterFill, RiInstagramLine } from "react-icons/ri";
-import DentalistLogoBlack from "../../assets/svg/dentalist-black.svg";
-import TelephoneIcon from "../../assets/svg/contact-phone.svg";
+import DentalistBlackLogo from "../../assets/svg/dentalist-black.svg";
+import PhoneIcon from "../../assets/svg/contact-phone.svg";
 import ClockIcon from "../../assets/svg/clock.svg";
 import LocationIcon from "../../assets/svg/location.svg";
 
@@ -13,13 +13,17 @@ const Footer = () => {
         {/* A - 3 lists */}
         <div
           className="flex flex-col items-center gap-y-12 gap-x-8 text-center 
-          tablet:flex-row tablet:justify-between tablet:items-start tablet:text-left"
+          tablet:flex-row tablet:justify-between tablet:items-start
+          tablet:text-left"
         >
           {/* 1 - logo, overview, follow... */}
           <div className="flex flex-col items-center tablet:items-start">
-            <Link to="/" className="active:scale-[.98] duration-300">
+            <Link
+              to="/dental-landing-page"
+              className="active:scale-[.98] duration-300"
+            >
               <img
-                src={DentalistLogoBlack}
+                src={DentalistBlackLogo}
                 alt="Dentalist"
                 className="w-[152px] min-w-[120px] h-auto"
               />
@@ -59,19 +63,30 @@ const Footer = () => {
             <li className="uppercase text-white/70 font-bold">Quick Links</li>
 
             <li className="hover:text-violet-hover duration-300">
-              <Link to="/about">About Us</Link>
+              <Link to="/dental-landing-page/about" className="block">
+                About Us
+              </Link>
             </li>
             <li className="hover:text-violet-hover duration-300">
-              <Link to="/services">Dental Services</Link>
+              <Link to="/dental-landing-page/services" className="block">
+                Dental Services
+              </Link>
+            </li>
+            <li
+              className="hover:text-violet-hover duration-300
+              cursor-pointer"
+            >
+              Dentist
             </li>
             <li className="hover:text-violet-hover duration-300">
-              <Link to="/">Dentist</Link>
+              <Link to="/dental-landing-page/blog" className="block">
+                Blog
+              </Link>
             </li>
             <li className="hover:text-violet-hover duration-300">
-              <Link to="/blog">Blog</Link>
-            </li>
-            <li className="hover:text-violet-hover duration-300">
-              <Link to="/about/:faq">FAQs</Link>
+              <Link to="/dental-landing-page/about#faq" className="block">
+                FAQs
+              </Link>
             </li>
           </ul>
 
@@ -83,13 +98,13 @@ const Footer = () => {
             <li className="uppercase text-white/70">Contact & Information</li>
 
             <li
-              className="flex items-end gap-x-6 justify-center 
+              className="flex items-center gap-x-6 justify-center 
               tablet:justify-start"
             >
               <img
-                src={TelephoneIcon}
+                src={PhoneIcon}
                 alt="phone number"
-                className="w-9 laptop:w-16 h-auto"
+                className="w-9 hidden tablet:block laptop:w-16 h-auto"
               />
               <p className="flex flex-col gap-y-1">
                 <span className="text-white/70 text-sm laptop:text-base">
@@ -100,30 +115,32 @@ const Footer = () => {
             </li>
 
             <li
-              className="flex items-end gap-x-6 justify-center 
+              className="flex items-center gap-x-6 justify-center 
               tablet:justify-start"
             >
               <img
                 src={ClockIcon}
                 alt="open hour"
-                className="w-9 laptop:w-16 h-auto"
+                className="w-9 hidden tablet:block laptop:w-16 h-auto"
               />
               <p className="flex flex-col gap-y-1">
                 <span className="text-white/70 text-sm laptop:text-base">
                   Open Hour
                 </span>
-                <span className="text-white font-bold">09:00 AM - 18:00 PM</span>
+                <span className="text-white font-bold">
+                  09:00 AM - 18:00 PM
+                </span>
               </p>
             </li>
 
             <li
-              className="flex items-end gap-x-6 justify-center 
+              className="flex items-center gap-x-6 justify-center 
               tablet:justify-start"
             >
               <img
                 src={LocationIcon}
                 alt="location"
-                className="w-9 laptop:w-16 h-auto"
+                className="w-9 hidden tablet:block laptop:w-16 h-auto"
               />
               <p className="flex flex-col gap-y-1">
                 <span className="text-white/70 text-sm laptop:text-base">
@@ -140,22 +157,23 @@ const Footer = () => {
         {/* B - ©Dentalist. All Right Reserved, terms of use... */}
         <div
           className="mt-28 font-medium text-base text-white flex flex-col
-          text-center gap-y-5 justify-between tablet:flex-row
+          text-center gap-y-4 justify-between tablet:flex-row
           tablet:text-left"
         >
           <p className="flex-grow text-white/70">
             ©Dentalist. All Right Reserved
           </p>
           <div
-            className="flex flex-col text-center justify-center gap-y-3 mobileM:flex-row mobileM:text-left 
-            mobileM:gap-x-16 -order-1 tablet:order-1"
+            className="flex flex-col text-center justify-center gap-y-3
+            mobileM:flex-row mobileM:text-left mobileM:gap-x-16 -order-1
+            tablet:order-1"
           >
-            <Link to="/" className="hover:text-violet-hover duration-300">
+            <span className="cursor-pointer hover:text-violet-hover duration-300">
               Terms of Use
-            </Link>
-            <Link to="/" className="hover:text-violet-hover duration-300">
+            </span>
+            <span className="cursor-pointer hover:text-violet-hover duration-300">
               Privacy Policy
-            </Link>
+            </span>
           </div>
         </div>
       </div>

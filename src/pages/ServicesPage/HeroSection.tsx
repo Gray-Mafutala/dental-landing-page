@@ -1,4 +1,4 @@
-import VioletButton from "../../components/UI/VioletButton";
+import VioletButton from "../../components/ui/VioletButton";
 import HeroImg from "../../assets/images/ServicesPage/two-dentists-and-a-patient.png";
 
 const HeroSection = () => {
@@ -27,14 +27,15 @@ const HeroSection = () => {
           />
         </div>
 
-        <p className="max-w-[490px] mt-8 mb-14 text-violet-dark/70">
+        <p className="max-w-[490px] mt-8 mb-14">
           Root canals have gotten a bad reputation, but us dentists don’t know
           why! These are the types of treatments that actually make you feel
           better!
         </p>
 
         <VioletButton
-          isLink={false}
+                  isLink={true}
+                  link="/dental-landing-page/services#book-appointment"
           addStyles="rounded-2xl after:rounded-2xl px-6 py-4 mobileM:px-10 mobileM:py-5 tabletL:self-start"
         >
           Book an appointment

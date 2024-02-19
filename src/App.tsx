@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Layout from "./pages/Layout";
 import Routing from "./routes";
-import LoadingPage from "./components/UI/LoadingPage";
+import LoadingPage from "./components/ui/LoadingPage";
 
 const App = () => {
   return (

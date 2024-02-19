@@ -8,7 +8,7 @@ const HeroSection = () => {
     >
       {/* top content */}
       <h1 className="whitespace-nowrap">Contact Us</h1>
-      <p className="mt-8 mb-16 max-w-[550px] text-lg font-medium text-violet-dark/70">
+      <p className="mt-8 mb-16 max-w-[550px] text-lg font-medium">
         Lorem ipsum is placeholder text commonly used in the graphic, print, and
         publishing industries for previewing layouts and visual mockups.
       </p>

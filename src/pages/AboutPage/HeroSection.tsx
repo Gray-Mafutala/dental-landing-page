@@ -1,4 +1,4 @@
-import VioletButton from "../../components/UI/VioletButton";
+import VioletButton from "../../components/ui/VioletButton";
 import DentistAndHisSmilingPatientImg from "../../assets/images/AboutPage/dentist-and-his-smiling-patient.png";
 
 const HeroSection = () => {
@@ -21,8 +21,7 @@ const HeroSection = () => {
         </div>
 
         <p
-          className="max-w-[550px] mx-auto tablet:mx-0 text-violet-dark/70
-          mt-8 mb-12 tablet:mb-16"
+          className="max-w-[550px] mx-auto tablet:mx-0 mt-8 mb-12 tablet:mb-16"
         >
           We want you to feel amazing about your oral wellness. Not just twice a
           year, but every time you take a bite, tell a joke, laugh, or share a

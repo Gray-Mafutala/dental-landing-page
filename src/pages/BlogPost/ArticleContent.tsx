@@ -1,11 +1,11 @@
-import authorAvatarImg from "../../assets/images/BlogPost/author-avatar.png";
-import articleCoverImg from "../../assets/images/BlogPost/article-cover.png";
-import articleImg1 from "../../assets/images/BlogPost/article-img-1.png";
-import articleImg2 from "../../assets/images/BlogPost/article-img-2.png";
+import AuthorAvatarImg from "../../assets/images/BlogPost/author-avatar.png";
+import ArticleCoverImg from "../../assets/images/BlogPost/article-cover.png";
+import ArticleImg1 from "../../assets/images/BlogPost/article-img-1.png";
+import ArticleImg2 from "../../assets/images/BlogPost/article-img-2.png";
 
 const ArticleContent = () => {
   return (
-    <section className="max-w-[1200px] mx-auto flex flex-col">
+    <section className="section-1200 flex-col">
       {/* title, author and abstract */}
       <div className="tablet:pl-20 mb-16">
         {/* title */}
@@ -17,7 +17,7 @@ const ArticleContent = () => {
         {/* author */}
         <div className="flex gap-x-3">
           <img
-            src={authorAvatarImg}
+            src={AuthorAvatarImg}
             alt="Robert Fox"
             className="w-12 h-12 rounded-[100%] object-cover"
           />
@@ -32,7 +32,7 @@ const ArticleContent = () => {
         </div>
 
         {/* abstract */}
-        <p className="max-w-[990px] text-base font-medium text-violet-dark/70 mt-8">
+        <p className="max-w-[990px] text-base font-medium mt-8">
           The paper discusses the use of epoxy resins in construction and repair
           of offshore concrete structures. Typical properties of resin systems
           are described, and the range of conditions encountered in practice and
@@ -42,7 +42,7 @@ const ArticleContent = () => {
 
       {/* article cover image */}
       <img
-        src={articleCoverImg}
+        src={ArticleCoverImg}
         alt="New Technology Make for Better Dental Operation"
         className="w-full h-[320px] mobileXL:h-[480px] tabletL:h-[520px] laptop:h-[600px] object-cover rounded-3xl"
       />
@@ -109,7 +109,7 @@ const ArticleContent = () => {
       >
         <div className="w-full mobileXL:max-w-[510px]">
           <img
-            src={articleImg1}
+            src={ArticleImg1}
             alt=""
             className="min-w-[280px] w-full h-[220px] mobileXL:h-[260px] tabletL:h-[300px] rounded-2xl object-cover"
           />
@@ -117,7 +117,7 @@ const ArticleContent = () => {
 
         <div className="w-full mobileXL:max-w-[400px] -order-1 mobileXL:order-1">
           <img
-            src={articleImg2}
+            src={ArticleImg2}
             alt=""
             className="min-w-[190px] w-full h-[220px] mobileXL:h-[260px] tabletL:h-[300px] rounded-2xl object-cover"
           />
@@ -127,7 +127,7 @@ const ArticleContent = () => {
       {/* citation paragraph */}
       <p
         className="mt-16 tablet:ml-20 p-6 mobileL:px-10 mobileL:py-12 max-w-[880px] mx-auto bg-gradient-to-r 
-        from-[#dbeffa] border-l-[3px] border-l-violet"
+        from-[#dbeffa] border-l-[3px] border-l-violet text-violet-dark font-bold"
       >
         “ Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
         lorem quis bibendum auctor, nisi elit consequat ipsum. Proin gravida

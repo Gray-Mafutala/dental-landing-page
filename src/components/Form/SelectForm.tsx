@@ -17,9 +17,8 @@ const SelectForm = ({
   value,
   onChange,
 }: SelectFormProps) => {
-  const getOptionValue = (option: string) => {
-    return option.replace(" ", "-").toLocaleLowerCase();
-  };
+  const getOptionValue = (option: string) =>
+    option.replace(/\s/g, "-").toLocaleLowerCase();
 
   return (
     <div className="flex flex-col gap-y-3">
@@ -35,10 +34,17 @@ const SelectForm = ({
         onChange={onChange}
         value={value}
         required
-        className="rounded-2xl border border-[#eee]
-        text-base font-medium text-violet-dark cursor-pointer outline-none
-        focus:shadow-[0_0_0_2px_#583fbc] focus:border-transparent duration-200
-        text-ellipsis form-select appearance-none p-3 pr-8 bg-no-repeat"
+        className={
+          value
+            ? `rounded-2xl border border-[#eee] text-base
+            font-medium text-violet-dark cursor-pointer outline-none
+            focus:shadow-[0_0_0_2px_#583fbc] focus:border-transparent duration-200
+            text-ellipsis form-select appearance-none p-3 pr-8 bg-no-repeat`
+            : `rounded-2xl border border-[#eee] text-base
+            font-medium text-primary cursor-pointer outline-none
+            focus:shadow-[0_0_0_2px_#583fbc] focus:border-transparent duration-200
+            text-ellipsis form-select appearance-none p-3 pr-8 bg-no-repeat`
+        }
       >
         {options.map((option, index) => (
           <option

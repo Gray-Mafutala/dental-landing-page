@@ -4,8 +4,8 @@ import VioletCircleOk from "../../assets/images/HomePage/violet-circle-ok.svg";
 const ExpertsInDental = () => {
   return (
     <section
-      className="max-w-[1200px] mx-auto w-full flex flex-col gap-y-14
-      tablet:flex-row tablet:justify-between items-center gap-x-16"
+      className="section-1200 justify-center
+      tablet:justify-between items-center gap-x-16"
     >
       {/* left content */}
       <div className="flex flex-col gap-y-8">
@@ -15,9 +15,18 @@ const ExpertsInDental = () => {
           <h2 className="max-w-[590px] mt-4 mb-6">
             Top-notch dentistry, from Seattle's top dentists
           </h2>
+
+          {/* image display on tablet and mobile screens */}
+          <div className="max-w-[550px] mt-8 mb-14 tablet:hidden">
+            <img
+              src={YoungAsianFemaleDentistImg}
+              alt="Young asian female dentist"
+              className="min-w-60 w-full h-auto object-cover"
+            />
+          </div>
+
           <p
-            className="max-w-[510px] font-medium text-violet-dark/70
-            mx-auto tablet:mx-0"
+            className="max-w-[510px] font-medium mx-auto tablet:mx-0"
           >
             Lorem ipsum is placeholder text commonly used in the graphic, print,
             and publishing industries for previewing layouts
@@ -45,7 +54,7 @@ const ExpertsInDental = () => {
       </div>
 
       {/* right content */}
-      <div className="max-w-[550px]">
+      <div className="max-w-[550px] hidden tablet:block">
         <img
           src={YoungAsianFemaleDentistImg}
           alt="Young asian female dentist"

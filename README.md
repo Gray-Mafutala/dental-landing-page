@@ -9,7 +9,7 @@
 ### Overview after integration
   ![home-page-hero-section](/readme-img/home-page-hero-section.PNG)
 
-  ![mobile-menu](/readme-img/mobile-menu.PNG)
+  ![mobile-preview](/readme-img/mobile-preview.png)
 
   ![home-page-features-section](/readme-img/home-page-features-section.PNG)
 
@@ -18,9 +18,3 @@
   ![latest-articles.PNG](/readme-img/latest-articles.PNG)
 
   ![blog-page-hero-section](/readme-img/blog-page-hero-section.PNG)
-
-  ![contact-form](/readme-img/contact-form.PNG)
-
-  ![footer](/readme-img/footer.PNG)
-
-  ![footer](/readme-img/mobile-preview.PNG)

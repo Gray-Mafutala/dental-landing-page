@@ -1,9 +1,10 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 import { Link } from "react-router-dom";
 import { CgMenuRight } from "react-icons/cg";
+
 import DentalistLogo from "../../assets/svg/dentalist.svg";
-import VioletButton from "../UI/VioletButton";
+import VioletButton from "../ui/VioletButton";
 import NavLinkItems from "./NavLinkItems";
 import MobileMenu from "./MobileMenu";
 
@@ -12,18 +13,15 @@ const Header = () => {
   const openMobileMenu = () => setMobileMenu(true);
   const closeMobileMenu = () => setMobileMenu(false);
 
-  // to add shadow on Header on scroll
-  const headerRef = useRef(null);
+  // to add shadow on Header when scrolling
   const [showShadow, setShowShadow] = useState(false);
   useEffect(() => {
-    const observer = new IntersectionObserver(([entry]) => {
-      //setShowShadow(entry.boundingClientRect.top < -100);
-      setShowShadow(entry.isIntersecting);
-      console.log(entry.boundingClientRect.top);
-    });
-    headerRef.current && observer.observe(headerRef.current);
-    return () => observer.disconnect();
-  }, []);
+    const scrollHandler = () => {
+      window.scrollY > 20 ? setShowShadow(true) : setShowShadow(false);
+    };
+    window.addEventListener("scroll", scrollHandler);
+    return () => window.removeEventListener("scroll", scrollHandler);
+  }, [showShadow]);
 
   return (
     <>
@@ -32,12 +30,11 @@ const Header = () => {
 
       {/* Header itself */}
       <header
-        ref={headerRef}
         className={
           showShadow
-            ? `sticky top-0 bg-white/80 backdrop-blur-md z-30 pt-6 pb-8 px-5 shadow-m`
-            : `sticky top-0 bg-white/80 backdrop-blur-md z-30 pt-6 pb-8 px-5
-              `
+            ? `sticky top-0 bg-white/80 backdrop-blur-md z-30 pt-6 pb-8 px-5 
+            shadow-[#0000001a_0px_1px_3px_0px,_#0000000f_0px_1px_2px_0px] duration-300`
+            : `sticky top-0 bg-white/80 backdrop-blur-md z-30 pt-6 pb-8 px-5 duration-300`
         }
       >
         <nav
@@ -46,7 +43,7 @@ const Header = () => {
         >
           {/* site logo */}
           <Link
-            to="/"
+            to="/dental-landing-page"
             className="hover:opacity-70 active:scale-[.98] duration-300"
           >
             <img
@@ -68,7 +65,7 @@ const Header = () => {
           {/* Book an appointment Button */}
           <VioletButton
             isLink={true}
-            link="/contact"
+            link="/dental-landing-page#book-appointment"
             addStyles="hidden laptopM:block text-sm laptop:text-base
             px-6 py-4 rounded-xl after:rounded-xl mr-5"
           >

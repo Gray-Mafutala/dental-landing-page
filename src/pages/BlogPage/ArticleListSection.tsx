@@ -1,40 +1,40 @@
-import articleCoverImg1 from "../../assets/images/BlogPage/article-cover-1.png";
-import articleCoverImg2 from "../../assets/images/BlogPage/article-cover-2.png";
-import articleCoverImg3 from "../../assets/images/BlogPage/article-cover-3.png";
-import articleCoverImg4 from "../../assets/images/BlogPage/article-cover-4.png";
-import articleCoverImg5 from "../../assets/images/BlogPage/article-cover-5.png";
-import articleCoverImg6 from "../../assets/images/BlogPage/article-cover-6.png";
+import ArticleCoverImg1 from "../../assets/images/BlogPage/article-cover-1.png";
+import ArticleCoverImg2 from "../../assets/images/BlogPage/article-cover-2.png";
+import ArticleCoverImg3 from "../../assets/images/BlogPage/article-cover-3.png";
+import ArticleCoverImg4 from "../../assets/images/BlogPage/article-cover-4.png";
+import ArticleCoverImg5 from "../../assets/images/BlogPage/article-cover-5.png";
+import ArticleCoverImg6 from "../../assets/images/BlogPage/article-cover-6.png";
 import ArticleCard from "../../components/ArticleCard";
 
 const articleList = [
   {
-    cover: articleCoverImg1,
+    cover: ArticleCoverImg1,
     category: "Technology",
     title: "New Technology Make for Dental Operation",
   },
   {
-    cover: articleCoverImg2,
+    cover: ArticleCoverImg2,
     category: "Dental",
     title: "Regular Dental care make Your Smile Brighter",
   },
   {
-    cover: articleCoverImg3,
+    cover: ArticleCoverImg3,
     category: "Hygiene",
     title: "Dental Hygiene for All Age to Make Smile",
   },
 
   {
-    cover: articleCoverImg4,
+    cover: ArticleCoverImg4,
     category: "Tips & trick",
     title: "New Technology Make for Dental Operation 2",
   },
   {
-    cover: articleCoverImg5,
+    cover: ArticleCoverImg5,
     category: "News",
     title: "Regular Dental care make Your Smile Brighter 2",
   },
   {
-    cover: articleCoverImg6,
+    cover: ArticleCoverImg6,
     category: "Events",
     title: "Dental Hygiene for All Age to Make Smile 2",
   },

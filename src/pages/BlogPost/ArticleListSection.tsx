@@ -1,21 +1,21 @@
-import articleCoverImg1 from "../../assets/images/HomePage/article-cover-1.png";
-import articleCoverImg2 from "../../assets/images/HomePage/article-cover-2.png";
-import articleCoverImg3 from "../../assets/images/HomePage/article-cover-3.png";
+import ArticleCoverImg1 from "../../assets/images/HomePage/article-cover-1.png";
+import ArticleCoverImg2 from "../../assets/images/HomePage/article-cover-2.png";
+import ArticleCoverImg3 from "../../assets/images/HomePage/article-cover-3.png";
 import ArticleCard from "../../components/ArticleCard";
 
 const articleList = [
   {
-    cover: articleCoverImg1,
+    cover: ArticleCoverImg1,
     category: "Technology",
     title: "New Technology Make for Dental Operation",
   },
   {
-    cover: articleCoverImg2,
+    cover: ArticleCoverImg2,
     category: "Dental",
     title: "Regular Dental care make Your Smile Brighter",
   },
   {
-    cover: articleCoverImg3,
+    cover: ArticleCoverImg3,
     category: "Hygiene",
     title: "Dental Hygiene for All Age to Make Smile",
   },
@@ -24,8 +24,7 @@ const articleList = [
 const ArticleListSection = () => {
   return (
     <section
-      className="max-w-[1200px] mx-auto flex flex-col items-center
-      gap-y-16"
+      className="section-1200 flex-col items-center gap-y-16"
     >
       {/* title */}
       <h2 className="text-center">Stay updated with our latest news</h2>

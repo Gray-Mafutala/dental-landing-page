@@ -1,7 +1,7 @@
 import Avatar1 from "../../assets/images/HomePage/avatar-1.png";
 import Avatar2 from "../../assets/images/HomePage/avatar-2.png";
 import Avatar3 from "../../assets/images/HomePage/avatar-3.png";
-import StarRating from "../../components/UI/StarRating";
+import StarRating from "../../components/StarRating";
 
 const testimonials = [
   {
@@ -24,20 +24,20 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <section
-      className="bg-sky-light rounded-[48px] pt-20 px-24 pb-20
+      className="bg-sky-light rounded-[48px] pt-20 px-5 mobileL:px-24 pb-20
       flex flex-col items-center gap-y-14"
     >
       {/* title, paragraph */}
       <div
         className="flex flex-col items-center text-center laptop:flex-row
-        laptop:justify-between laptop:text-left gap-x-8 gap-y-12"
+        laptop:justify-between laptop:text-left gap-x-14 gap-y-12"
       >
         <div className="flex flex-col gap-y-4">
           <span className="section-small-title">Testimonials</span>
-          <h2 className="max-w-md">What people have said about us</h2>
+          <h2 className="max-w-[488px]">What people have said about us</h2>
         </div>
 
-        <p className="max-w-[480px] text-violet-dark/70">
+        <p className="max-w-[480px]">
           Lorem ipsum is placeholder text commonly used in the graphic, print,
           and publishing industries for previewing layouts.
         </p>
@@ -51,8 +51,8 @@ const Testimonials = () => {
         {testimonials.map(({ avatar, fullName, starCount }, index) => (
           <div
             key={index}
-            className="min-w-60 max-w-[480px] flex flex-col items-center rounded-[2rem]
-            pb-8 px-6 gap-y-6 bg-white shadow-sm"
+            className="min-w-60 max-w-[480px] flex flex-col items-center 
+            rounded-[2rem] pb-8 px-6 gap-y-6 bg-white shadow-sm"
           >
             <img
               src={avatar}

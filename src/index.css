@@ -53,6 +53,10 @@
 }
 
 @layer components {
+    .section-1200 {
+        @apply max-w-[1200px] mx-auto w-full flex
+    }
+
     .section-small-title {
         @apply text-violet text-sm uppercase font-bold;
     }
@@ -102,7 +106,13 @@
 
 /* for form select element */
 .form-select {
-    background-image: url("./assets//images//HomePage//violet-down-arrow.svg");
+    background-image: url("./assets//svg//select-down-arrow-gray.svg");
+    background-size: 0.7rem;
+    background-position: right 0.7rem center;
+}
+
+.form-select:focus {
+    background-image: url("./assets//svg//select-down-arrow-black.svg");
     background-size: 0.7rem;
     background-position: right 0.7rem center;
 }
@@ -113,11 +123,11 @@
 }
 
 .linear-transition::before {
-    @apply content-[""] absolute inset-0 bg-gradient-to-b from-[#dbeffa] z-[1] opacity-0 transition-opacity duration-300 ease-out
+    @apply content-[""] absolute inset-0 bg-gradient-to-b from-[#dbeffa] z-[1] opacity-0 transition-opacity duration-300 ease-in-out
 }
 
 .linear-transition.active::before {
-    @apply opacity-100 transition-opacity duration-300 ease-out
+    @apply opacity-100 transition-opacity duration-300 ease-in-out
 }
 
 /* for gallery images */
@@ -145,7 +155,7 @@
             "img1 img1 img2 img3"
             "img4 img5 img6 img6";
 
-            grid-template-columns: none;
+        grid-template-columns: none;
     }
 }
 

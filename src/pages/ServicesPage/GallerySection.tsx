@@ -1,39 +1,31 @@
-import photo1 from "../../assets/images/ServicesPage/gallery-photo-1.png";
-import photo2 from "../../assets/images/ServicesPage/gallery-photo-2.png";
-import photo3 from "../../assets/images/ServicesPage/gallery-photo-3.png";
-import photo4 from "../../assets/images/ServicesPage/gallery-photo-4.png";
-import photo5 from "../../assets/images/ServicesPage/gallery-photo-5.png";
-import photo6 from "../../assets/images/ServicesPage/gallery-photo-6.png";
+import SectionHeaderAndParagraph from "../../components/SectionHeaderAndParagraph";
+import Photo1 from "../../assets/images/ServicesPage/gallery-photo-1.png";
+import Photo2 from "../../assets/images/ServicesPage/gallery-photo-2.png";
+import Photo3 from "../../assets/images/ServicesPage/gallery-photo-3.png";
+import Photo4 from "../../assets/images/ServicesPage/gallery-photo-4.png";
+import Photo5 from "../../assets/images/ServicesPage/gallery-photo-5.png";
+import Photo6 from "../../assets/images/ServicesPage/gallery-photo-6.png";
 
 const gallery = [
-  { photo: photo1, key: "photo1" },
-  { photo: photo2, key: "photo2" },
-  { photo: photo3, key: "photo3" },
-  { photo: photo4, key: "photo4" },
-  { photo: photo5, key: "photo5" },
-  { photo: photo6, key: "photo6" },
+  { photo: Photo1, key: "p1" },
+  { photo: Photo2, key: "p2" },
+  { photo: Photo3, key: "p3" },
+  { photo: Photo4, key: "p4" },
+  { photo: Photo5, key: "p5" },
+  { photo: Photo6, key: "p6" },
 ];
 
 const GallerySection = () => {
   return (
-    <section className="max-w-[1200px] mx-auto w-full flex flex-col gap-y-16">
+    <section className="section-1200 flex-col gap-y-16">
       {/* title, paragraph */}
-      <div
-        className="flex flex-col items-center text-center laptop:flex-row
-        laptop:justify-between laptop:text-left gap-x-8 gap-y-12"
-      >
-        <div className="flex flex-col gap-y-4">
-          <span className="section-small-title">Gallery</span>
-          <h2 className="max-w-[475px]">
-            Some proof about our services for you
-          </h2>
-        </div>
-
-        <p className="max-w-xl text-violet-dark/70">
-          Lorem ipsum is placeholder text commonly used in the graphic, print,
-          and publishing industries for previewing layouts and visual mockups.
-        </p>
-      </div>
+      <SectionHeaderAndParagraph
+        category="Gallery"
+              title="Some proof about our services for you"
+              titleStyles="max-w-[475px]"
+        paragraph="Lorem ipsum is placeholder text commonly used in the graphic, print,
+        and publishing industries for previewing layouts and visual mockups."
+      />
 
       {/* Gallery photos */}
       <div className="grid gap-10 gallery-grid">
@@ -43,15 +35,15 @@ const GallerySection = () => {
             src={photo}
             alt=""
             className={
-              key === "photo1"
+              key === "p1"
                 ? "gallery-photo gallery-photo-1"
-                : key === "photo2"
+                : key === "p2"
                 ? "gallery-photo gallery-photo-2"
-                : key === "photo3"
+                : key === "p3"
                 ? "gallery-photo gallery-photo-3"
-                : key === "photo4"
+                : key === "p4"
                 ? "gallery-photo gallery-photo-4"
-                : key === "photo5"
+                : key === "p5"
                 ? "gallery-photo gallery-photo-5"
                 : "gallery-photo gallery-photo-6"
             }

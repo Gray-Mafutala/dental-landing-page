@@ -15,19 +15,20 @@ const Routing = () => {
     { path: "/dental-landing-page", element: <HomePage /> },
 
     { path: "/about", element: <AboutPage /> },
+    { path: "/dental-landing-page/about", element: <AboutPage /> },
+
     { path: "/services", element: <ServicesPage /> },
+    { path: "/dental-landing-page/services", element: <ServicesPage /> },
 
-    {
-      path: "/blog",
-      element: <BlogPage />,
-    },
+    { path: "/blog", element: <BlogPage /> },
+    { path: "/dental-landing-page/blog", element: <BlogPage /> },
 
-    {
-      path: "/blog/:id",
-      element: <BlogPost />,
-    },
+    { path: "/blog/:id", element: <BlogPost /> },
+    { path: "/dental-landing-page/blog/:id", element: <BlogPost /> },
 
     { path: "/contact", element: <ContactPage /> },
+    { path: "/dental-landing-page/contact", element: <ContactPage /> },
+
     { path: "/*", element: <PageNotFound /> },
   ]);
 

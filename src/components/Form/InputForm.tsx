@@ -34,10 +34,11 @@ const InputForm = ({
         placeholder={placeholder}
         onChange={onChange}
         value={value}
+        required
         className="text-base font-medium p-3 rounded-2xl border
         border-[#eee] text-violet-dark outline-none
         focus:shadow-[0_0_0_2px_#583fbc] focus:border-transparent
-        duration-200"
+        duration-200 placeholder-primary"
       />
     </div>
   );

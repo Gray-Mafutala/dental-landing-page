@@ -1,16 +1,16 @@
-import clinicImg1 from "../../assets/images/ContactPage/clinic-img-1.png";
-import clinicImg2 from "../../assets/images/ContactPage/clinic-img-2.png";
-import mapImg from "../../assets/images/ContactPage/map-img.png";
+import ClinicImg1 from "../../assets/images/ContactPage/clinic-img-1.png";
+import ClinicImg2 from "../../assets/images/ContactPage/clinic-img-2.png";
+import MapImg from "../../assets/images/ContactPage/map-img.png";
 
 const addresses = [
   {
-    imgClinic: clinicImg1,
+    imgClinic: ClinicImg1,
     nameClinic: "Dentalist Main Clinic",
     address: "35 West Dental Street California 1004",
     key: "a1",
   },
   {
-    imgClinic: clinicImg2,
+    imgClinic: ClinicImg2,
     nameClinic: "Dentalist Main Clinic",
     address: "35 West Dental Street California 1004",
     key: "b2",
@@ -48,7 +48,7 @@ const OurClinicSection = () => {
               {/* put maps here */}
               <div className="max-w-36">
                 <img
-                  src={mapImg}
+                  src={MapImg}
                   alt=""
                   className="min-w-[80px] w-full h-full rounded-r-[2rem]"
                 />

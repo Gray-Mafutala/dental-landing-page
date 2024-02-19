@@ -1,5 +1,5 @@
-import SearchBar from "../../components/UI/SearchBar";
-import newsAndArticleImg from "../../assets/images/BlogPage/news-and-article-img.png";
+import SearchBar from "../../components/SearchBar";
+import NewsAndArticleImg from "../../assets/images/BlogPage/news-and-article-img.png";
 
 const HeroSection = () => {
   return (
@@ -14,7 +14,7 @@ const HeroSection = () => {
         {/* hero image - display on tablet and mobile screens */}
         <div className="max-w-[620px] mb-10 tablet:hidden">
           <img
-            src={newsAndArticleImg}
+            src={NewsAndArticleImg}
             alt="News and article about dentition"
             className="min-w-60 w-full h-auto object-cover"
           />
@@ -35,7 +35,7 @@ const HeroSection = () => {
       {/* right content - hero image */}
       <div className="max-w-[620px] hidden tablet:block">
         <img
-          src={newsAndArticleImg}
+          src={NewsAndArticleImg}
           alt="News and article about dentition"
           className="min-w-60 w-full h-auto object-cover"
         />
