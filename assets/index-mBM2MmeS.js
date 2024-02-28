@@ -1,4 +1,4 @@
-import{j as e}from"./index-lmNW8CGT.js";import{F as n}from"./index-p-3c0c2a.js";const i=()=>e.jsxs("section",{className:`mobileM:px-5 bg-sky-light pt-16 rounded-[48px] flex flex-col\r
+import{j as e}from"./index-Qw8IXxoa.js";import{F as n}from"./index-NnR3iDdn.js";const i=()=>e.jsxs("section",{className:`mobileM:px-5 bg-sky-light pt-16 rounded-[48px] flex flex-col\r
       items-center text-center mobileM:pb-5 tablet:pb-0 tablet:mb-[420px]`,children:[e.jsx("h1",{className:"whitespace-nowrap",children:"Contact Us"}),e.jsx("p",{className:"mt-8 mb-16 max-w-[550px] text-lg font-medium",children:"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."}),e.jsx(n,{addStylesToForm:`bg-white pt-10 pb-8 px-4 mobileM:px-6 mobileXL:px-10 tablet:px-16 \r
         tabletL:pt-14 tabletL:pb-12 tabletL:px-24 rounded-[2rem] tablet:rounded-[3rem]\r
         text-left tablet:shadow-md tablet:-mb-[420px]\r
