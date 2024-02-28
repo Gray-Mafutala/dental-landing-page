@@ -20,7 +20,7 @@ const HeroSection = () => {
           />
         </div>
 
-        <p className="max-w-[480px] mx-auto tablet:mx-0 mt-8 mb-16">
+        <p className="max-w-[480px] mx-auto mt-8 tablet:mx-0 tablet:mb-16">
           Stays updated with our latest blog and news and get healthy tips &
           trick for oral health.
         </p>

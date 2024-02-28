@@ -33,7 +33,7 @@ const Header = () => {
         className={
           showShadow
             ? `sticky top-0 bg-white/80 backdrop-blur-md z-30 pt-6 pb-8 px-5 
-            shadow-[#0000001a_0px_1px_3px_0px,_#0000000f_0px_1px_2px_0px] duration-300`
+            shadow-[#0000002a_0px_2px_3px_0px] duration-300`
             : `sticky top-0 bg-white/80 backdrop-blur-md z-30 pt-6 pb-8 px-5 duration-300`
         }
       >

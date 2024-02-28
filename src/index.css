@@ -160,7 +160,7 @@
 }
 
 .gallery-photo {
-    @apply w-full h-[220px] mobileL:h-[300px] object-cover rounded-[2rem] border
+    @apply w-full h-[220px] mobileL:h-[300px] object-cover rounded-[2rem]
 }
 
 .gallery-photo-1 {

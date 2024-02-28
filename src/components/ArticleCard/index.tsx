@@ -13,7 +13,7 @@ const ArticleCard = ({
   cover,
   category,
   abstract,
-  link = "/blog/new-tech",
+  link = "/dental-landing-page/blog/new-tech",
 }: ArticleCardProps) => {
   return (
     <Link

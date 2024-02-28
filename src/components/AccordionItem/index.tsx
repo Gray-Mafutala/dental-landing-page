@@ -13,7 +13,7 @@ const AccordionItem = ({ question, answer }: AccordionItemProps) => {
     <div
       className={
         isActive
-          ? "flex flex-col border-b border-b-[#96a0b5] !border-t-2 !border-t-violet pb-3 linear-transition active"
+          ? "flex flex-col border-b border-b-[#96a0b5] !border-t-2 !border-t-violet pb-4 linear-transition active"
           : "flex flex-col border-b border-b-[#96a0b5] linear-transition"
       }
     >
@@ -50,8 +50,8 @@ const AccordionItem = ({ question, answer }: AccordionItemProps) => {
       <div
         className={
           isActive
-            ? "max-h-auto duration-300 ease-out"
-            : "max-h-0 overflow-hidden duration-300 ease-out"
+            ? "max-h-auto"
+            : "max-h-0 overflow-hidden"
         }
       >
         <p className="text-[#96a0b5] text-xl tabletL:text-2xl font-normal px-6">
